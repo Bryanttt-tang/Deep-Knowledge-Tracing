@@ -1,0 +1,214 @@
+2023-10-07 19:08:29,012 INFO    StreamThr :20848 [internal.py:wandb_internal():86] W&B internal server running at pid: 20848, started at: 2023-10-07 19:08:29.012475
+2023-10-07 19:08:29,014 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: status
+2023-10-07 19:08:29,015 INFO    WriterThread:20848 [datastore.py:open_for_write():85] open: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\run-vysdo898.wandb
+2023-10-07 19:08:29,017 DEBUG   SenderThread:20848 [sender.py:send():380] send: header
+2023-10-07 19:08:29,067 DEBUG   SenderThread:20848 [sender.py:send():380] send: run
+2023-10-07 19:08:29,447 INFO    SenderThread:20848 [dir_watcher.py:__init__():211] watching files in: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files
+2023-10-07 19:08:29,447 INFO    SenderThread:20848 [sender.py:_start_run_threads():1122] run started: vysdo898 with start time 1696698509.011473
+2023-10-07 19:08:29,459 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: check_version
+2023-10-07 19:08:29,459 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: check_version
+2023-10-07 19:08:29,582 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: run_start
+2023-10-07 19:08:29,729 DEBUG   HandlerThread:20848 [system_info.py:__init__():32] System info init
+2023-10-07 19:08:29,729 DEBUG   HandlerThread:20848 [system_info.py:__init__():47] System info init done
+2023-10-07 19:08:29,729 INFO    HandlerThread:20848 [system_monitor.py:start():181] Starting system monitor
+2023-10-07 19:08:29,730 INFO    SystemMonitor:20848 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-07 19:08:29,730 INFO    HandlerThread:20848 [system_monitor.py:probe():201] Collecting system info
+2023-10-07 19:08:29,734 INFO    SystemMonitor:20848 [interfaces.py:start():190] Started cpu monitoring
+2023-10-07 19:08:29,734 INFO    SystemMonitor:20848 [interfaces.py:start():190] Started disk monitoring
+2023-10-07 19:08:29,735 INFO    SystemMonitor:20848 [interfaces.py:start():190] Started gpu monitoring
+2023-10-07 19:08:29,736 INFO    SystemMonitor:20848 [interfaces.py:start():190] Started memory monitoring
+2023-10-07 19:08:29,753 INFO    SystemMonitor:20848 [interfaces.py:start():190] Started network monitoring
+2023-10-07 19:08:29,764 DEBUG   HandlerThread:20848 [system_info.py:probe():196] Probing system
+2023-10-07 19:08:29,766 DEBUG   HandlerThread:20848 [system_info.py:_probe_git():181] Probing git
+2023-10-07 19:08:29,773 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:29,774 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:29,858 DEBUG   HandlerThread:20848 [system_info.py:_probe_git():189] Probing git done
+2023-10-07 19:08:29,858 DEBUG   HandlerThread:20848 [system_info.py:probe():244] Probing system done
+2023-10-07 19:08:29,858 DEBUG   HandlerThread:20848 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.8.8', 'heartbeatAt': '2023-10-07T17:08:29.764856', 'startedAt': '2023-10-07T17:08:28.993532', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\ETHz\\Internship\\adaptive-e-learning-for-educational-recommendation-system\\DeepKnowledgeTracing-DKT-Pytorch\\DKT\\KnowledgeTracing\\evaluation\\run.py', 'codePathLocal': 'run.py', 'codePath': 'DKT\\KnowledgeTracing\\evaluation\\run.py', 'git': {'remote': 'https://github.com/pydaxing/DeepKnowledgeTracing-DKT-Pytorch.git', 'commit': '49418a2a50164318844b32e6f41b69032501ee9b'}, 'email': 'tangyu990628@gmail.com', 'root': 'D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch', 'host': 'LAPTOP-HVTN1FK1', 'username': 'tyu06', 'executable': 'C:\\Users\\tyu06\\anaconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2301.0, 'min': 0.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 2301.0, 'min': 0.0, 'max': 2301.0}], 'disk': {'/': {'total': 433.9125785827637, 'used': 295.5895195007324}}, 'gpu': 'GeForce MX350', 'gpu_count': 1, 'gpu_devices': [{'name': 'GeForce MX350', 'memory_total': 2147483648}], 'memory': {'total': 15.870410919189453}}
+2023-10-07 19:08:29,858 INFO    HandlerThread:20848 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-07 19:08:29,859 INFO    HandlerThread:20848 [system_monitor.py:probe():214] Publishing system info
+2023-10-07 19:08:29,859 DEBUG   HandlerThread:20848 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-07 19:08:29,860 DEBUG   HandlerThread:20848 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-07 19:08:29,860 DEBUG   HandlerThread:20848 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-07 19:08:30,462 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\requirements.txt
+2023-10-07 19:08:30,463 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\conda-environment.yaml
+2023-10-07 19:08:31,928 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:31,928 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:34,082 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:34,082 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:36,229 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:36,230 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:38,383 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:38,383 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:39,535 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\conda-environment.yaml
+2023-10-07 19:08:39,562 DEBUG   HandlerThread:20848 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-07 19:08:39,563 INFO    HandlerThread:20848 [system_monitor.py:probe():216] Finished publishing system info
+2023-10-07 19:08:39,575 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:08:39,575 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: keepalive
+2023-10-07 19:08:39,576 DEBUG   SenderThread:20848 [sender.py:send():380] send: files
+2023-10-07 19:08:39,576 INFO    SenderThread:20848 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-07 19:08:39,587 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-07 19:08:39,588 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: stop_status
+2023-10-07 19:08:39,590 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:08:39,878 DEBUG   SenderThread:20848 [sender.py:send():380] send: telemetry
+2023-10-07 19:08:39,879 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:08:40,176 INFO    wandb-upload_0:20848 [upload_job.py:push():131] Uploaded file C:\Users\tyu06\AppData\Local\Temp\tmpv7a258evwandb\ps6ppve9-wandb-metadata.json
+2023-10-07 19:08:40,536 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:40,537 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:40,537 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:40,537 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\wandb-metadata.json
+2023-10-07 19:08:42,555 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:42,679 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:42,679 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:44,559 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:44,826 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:44,826 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:45,612 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:08:46,851 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:46,851 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:48,574 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:48,872 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:48,872 ERROR   gpu       :20848 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:08:50,032 DEBUG   SenderThread:20848 [sender.py:send():380] send: exit
+2023-10-07 19:08:50,032 INFO    SenderThread:20848 [sender.py:send_exit():585] handling exit code: 1
+2023-10-07 19:08:50,032 INFO    SenderThread:20848 [sender.py:send_exit():587] handling runtime: 20
+2023-10-07 19:08:50,033 INFO    SenderThread:20848 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-07 19:08:50,033 INFO    SenderThread:20848 [sender.py:send_exit():593] send defer
+2023-10-07 19:08:50,033 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,033 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 0
+2023-10-07 19:08:50,033 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,033 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-07 19:08:50,033 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 1
+2023-10-07 19:08:50,033 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,033 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 1
+2023-10-07 19:08:50,035 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,035 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-07 19:08:50,035 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 2
+2023-10-07 19:08:50,035 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,035 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 2
+2023-10-07 19:08:50,035 INFO    HandlerThread:20848 [system_monitor.py:finish():190] Stopping system monitor
+2023-10-07 19:08:50,035 INFO    HandlerThread:20848 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-07 19:08:50,035 DEBUG   SystemMonitor:20848 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-10-07 19:08:50,035 DEBUG   SystemMonitor:20848 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-10-07 19:08:50,035 DEBUG   SystemMonitor:20848 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-10-07 19:08:50,035 INFO    HandlerThread:20848 [interfaces.py:finish():202] Joined disk monitor
+2023-10-07 19:08:50,070 ERROR   gpu       :20848 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-10-07 19:08:50,070 INFO    HandlerThread:20848 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-07 19:08:50,070 INFO    HandlerThread:20848 [interfaces.py:finish():202] Joined memory monitor
+2023-10-07 19:08:50,070 INFO    HandlerThread:20848 [interfaces.py:finish():202] Joined network monitor
+2023-10-07 19:08:50,072 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,072 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-07 19:08:50,072 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 3
+2023-10-07 19:08:50,072 DEBUG   SenderThread:20848 [sender.py:send():380] send: stats
+2023-10-07 19:08:50,072 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,072 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 3
+2023-10-07 19:08:50,072 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,072 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-07 19:08:50,072 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 4
+2023-10-07 19:08:50,072 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,072 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 4
+2023-10-07 19:08:50,072 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,072 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-07 19:08:50,073 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 5
+2023-10-07 19:08:50,073 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,073 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 5
+2023-10-07 19:08:50,073 DEBUG   SenderThread:20848 [sender.py:send():380] send: summary
+2023-10-07 19:08:50,074 INFO    SenderThread:20848 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-07 19:08:50,074 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,074 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-07 19:08:50,074 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 6
+2023-10-07 19:08:50,076 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,076 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 6
+2023-10-07 19:08:50,076 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,076 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-07 19:08:50,080 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:08:50,277 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 7
+2023-10-07 19:08:50,277 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:50,277 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 7
+2023-10-07 19:08:50,277 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:50,278 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-07 19:08:50,602 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:50,602 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\config.yaml
+2023-10-07 19:08:50,603 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\wandb-summary.json
+2023-10-07 19:08:51,035 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-07 19:08:52,624 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:53,983 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 8
+2023-10-07 19:08:53,983 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: poll_exit
+2023-10-07 19:08:53,984 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:53,984 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 8
+2023-10-07 19:08:53,984 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:53,984 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-07 19:08:53,984 INFO    SenderThread:20848 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-07 19:08:53,985 INFO    SenderThread:20848 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-07 19:08:53,990 INFO    SenderThread:20848 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-07 19:08:54,003 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 9
+2023-10-07 19:08:54,003 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:54,003 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 9
+2023-10-07 19:08:54,004 DEBUG   SenderThread:20848 [sender.py:send():380] send: artifact
+2023-10-07 19:08:54,643 INFO    Thread-16 :20848 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:54,808 INFO    SenderThread:20848 [sender.py:send_artifact():1456] sent artifact job-https___github.com_pydaxing_DeepKnowledgeTracing-DKT-Pytorch.git_DKT_KnowledgeTracing_evaluation_run.py - {'id': 'QXJ0aWZhY3Q6NTk0MjIzODU1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwNDE4MTY5MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTk2MTgwNDQ3', 'versionIndex': 2}}}
+2023-10-07 19:08:54,809 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:54,809 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-07 19:08:54,809 INFO    SenderThread:20848 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-07 19:08:55,653 INFO    SenderThread:20848 [dir_watcher.py:finish():388] scan: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files
+2023-10-07 19:08:55,653 INFO    SenderThread:20848 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\conda-environment.yaml conda-environment.yaml
+2023-10-07 19:08:55,654 INFO    SenderThread:20848 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\config.yaml config.yaml
+2023-10-07 19:08:55,656 INFO    SenderThread:20848 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log output.log
+2023-10-07 19:08:55,657 INFO    SenderThread:20848 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\requirements.txt requirements.txt
+2023-10-07 19:08:55,659 INFO    SenderThread:20848 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\wandb-metadata.json wandb-metadata.json
+2023-10-07 19:08:55,659 INFO    SenderThread:20848 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\wandb-summary.json wandb-summary.json
+2023-10-07 19:08:55,664 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 10
+2023-10-07 19:08:55,664 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:55,664 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 10
+2023-10-07 19:08:55,665 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:55,666 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-07 19:08:55,667 INFO    SenderThread:20848 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-07 19:08:56,037 INFO    wandb-upload_1:20848 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\config.yaml
+2023-10-07 19:08:56,091 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: keepalive
+2023-10-07 19:08:56,105 INFO    wandb-upload_0:20848 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\conda-environment.yaml
+2023-10-07 19:08:56,114 INFO    wandb-upload_2:20848 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\output.log
+2023-10-07 19:08:56,127 INFO    wandb-upload_4:20848 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\wandb-summary.json
+2023-10-07 19:08:56,155 INFO    wandb-upload_3:20848 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\files\requirements.txt
+2023-10-07 19:08:56,357 INFO    Thread-15 :20848 [sender.py:transition_state():613] send defer: 11
+2023-10-07 19:08:56,358 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:56,358 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 11
+2023-10-07 19:08:56,359 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:56,359 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-07 19:08:56,359 INFO    SenderThread:20848 [file_pusher.py:join():181] waiting for file pusher
+2023-10-07 19:08:56,359 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 12
+2023-10-07 19:08:56,359 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:56,359 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 12
+2023-10-07 19:08:56,360 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:56,360 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-07 19:08:56,360 INFO    SenderThread:20848 [file_stream.py:finish():595] file stream finish called
+2023-10-07 19:08:56,518 INFO    SenderThread:20848 [file_stream.py:finish():599] file stream finish is done
+2023-10-07 19:08:56,518 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 13
+2023-10-07 19:08:56,518 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:56,518 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 13
+2023-10-07 19:08:56,519 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:56,519 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-07 19:08:56,519 INFO    SenderThread:20848 [sender.py:transition_state():613] send defer: 14
+2023-10-07 19:08:56,519 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:08:56,519 INFO    HandlerThread:20848 [handler.py:handle_request_defer():170] handle defer: 14
+2023-10-07 19:08:56,520 DEBUG   SenderThread:20848 [sender.py:send():380] send: final
+2023-10-07 19:08:56,520 DEBUG   SenderThread:20848 [sender.py:send():380] send: footer
+2023-10-07 19:08:56,520 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:08:56,520 INFO    SenderThread:20848 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-07 19:08:56,520 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-07 19:08:56,521 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: server_info
+2023-10-07 19:08:56,521 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: get_summary
+2023-10-07 19:08:56,521 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: sampled_history
+2023-10-07 19:08:56,521 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:08:56,521 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: job_info
+2023-10-07 19:08:56,522 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: poll_exit
+2023-10-07 19:08:56,522 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: server_info
+2023-10-07 19:08:56,677 DEBUG   SenderThread:20848 [sender.py:send_request():407] send_request: job_info
+2023-10-07 19:08:56,678 INFO    MainThread:20848 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-10-07 19:08:56,678 INFO    MainThread:20848 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-10-07 19:08:56,678 INFO    MainThread:20848 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-10-07 19:08:56,678 DEBUG   HandlerThread:20848 [handler.py:handle_request():144] handle_request: shutdown
+2023-10-07 19:08:56,678 INFO    HandlerThread:20848 [handler.py:finish():844] shutting down handler
+2023-10-07 19:08:57,532 INFO    WriterThread:20848 [datastore.py:close():294] close: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_190828-vysdo898\run-vysdo898.wandb
+2023-10-07 19:08:57,687 INFO    SenderThread:20848 [sender.py:finish():1534] shutting down sender
+2023-10-07 19:08:57,687 INFO    SenderThread:20848 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-07 19:08:57,688 INFO    SenderThread:20848 [file_pusher.py:join():181] waiting for file pusher

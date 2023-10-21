@@ -1,0 +1,299 @@
+2023-10-07 19:12:07,539 INFO    StreamThr :15816 [internal.py:wandb_internal():86] W&B internal server running at pid: 15816, started at: 2023-10-07 19:12:07.538386
+2023-10-07 19:12:07,541 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status
+2023-10-07 19:12:07,543 INFO    WriterThread:15816 [datastore.py:open_for_write():85] open: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\run-p4ad4xob.wandb
+2023-10-07 19:12:07,547 DEBUG   SenderThread:15816 [sender.py:send():380] send: header
+2023-10-07 19:12:07,604 DEBUG   SenderThread:15816 [sender.py:send():380] send: run
+2023-10-07 19:12:07,992 INFO    SenderThread:15816 [dir_watcher.py:__init__():211] watching files in: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files
+2023-10-07 19:12:07,992 INFO    SenderThread:15816 [sender.py:_start_run_threads():1122] run started: p4ad4xob with start time 1696698727.538386
+2023-10-07 19:12:08,006 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: check_version
+2023-10-07 19:12:08,006 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: check_version
+2023-10-07 19:12:08,243 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: run_start
+2023-10-07 19:12:08,504 DEBUG   HandlerThread:15816 [system_info.py:__init__():32] System info init
+2023-10-07 19:12:08,505 DEBUG   HandlerThread:15816 [system_info.py:__init__():47] System info init done
+2023-10-07 19:12:08,505 INFO    HandlerThread:15816 [system_monitor.py:start():181] Starting system monitor
+2023-10-07 19:12:08,505 INFO    SystemMonitor:15816 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-07 19:12:08,505 INFO    HandlerThread:15816 [system_monitor.py:probe():201] Collecting system info
+2023-10-07 19:12:08,510 INFO    SystemMonitor:15816 [interfaces.py:start():190] Started cpu monitoring
+2023-10-07 19:12:08,511 INFO    SystemMonitor:15816 [interfaces.py:start():190] Started disk monitoring
+2023-10-07 19:12:08,513 INFO    SystemMonitor:15816 [interfaces.py:start():190] Started gpu monitoring
+2023-10-07 19:12:08,513 INFO    SystemMonitor:15816 [interfaces.py:start():190] Started memory monitoring
+2023-10-07 19:12:08,532 INFO    SystemMonitor:15816 [interfaces.py:start():190] Started network monitoring
+2023-10-07 19:12:08,569 DEBUG   HandlerThread:15816 [system_info.py:probe():196] Probing system
+2023-10-07 19:12:08,573 DEBUG   HandlerThread:15816 [system_info.py:_probe_git():181] Probing git
+2023-10-07 19:12:08,584 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:08,584 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:08,705 DEBUG   HandlerThread:15816 [system_info.py:_probe_git():189] Probing git done
+2023-10-07 19:12:08,705 DEBUG   HandlerThread:15816 [system_info.py:probe():244] Probing system done
+2023-10-07 19:12:08,705 DEBUG   HandlerThread:15816 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.8.8', 'heartbeatAt': '2023-10-07T17:12:08.569294', 'startedAt': '2023-10-07T17:12:07.520384', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\ETHz\\Internship\\adaptive-e-learning-for-educational-recommendation-system\\DeepKnowledgeTracing-DKT-Pytorch\\DKT\\KnowledgeTracing\\evaluation\\run.py', 'codePathLocal': 'run.py', 'codePath': 'DKT\\KnowledgeTracing\\evaluation\\run.py', 'git': {'remote': 'https://github.com/pydaxing/DeepKnowledgeTracing-DKT-Pytorch.git', 'commit': '49418a2a50164318844b32e6f41b69032501ee9b'}, 'email': 'tangyu990628@gmail.com', 'root': 'D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch', 'host': 'LAPTOP-HVTN1FK1', 'username': 'tyu06', 'executable': 'C:\\Users\\tyu06\\anaconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2301.0, 'min': 0.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 2301.0, 'min': 0.0, 'max': 2301.0}], 'disk': {'/': {'total': 433.9125785827637, 'used': 295.58977127075195}}, 'gpu': 'GeForce MX350', 'gpu_count': 1, 'gpu_devices': [{'name': 'GeForce MX350', 'memory_total': 2147483648}], 'memory': {'total': 15.870410919189453}}
+2023-10-07 19:12:08,705 INFO    HandlerThread:15816 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-07 19:12:08,705 INFO    HandlerThread:15816 [system_monitor.py:probe():214] Publishing system info
+2023-10-07 19:12:08,705 DEBUG   HandlerThread:15816 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-07 19:12:08,707 DEBUG   HandlerThread:15816 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-07 19:12:08,708 DEBUG   HandlerThread:15816 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-07 19:12:08,999 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\requirements.txt
+2023-10-07 19:12:09,000 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\conda-environment.yaml
+2023-10-07 19:12:10,845 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:10,845 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:13,109 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:13,109 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:15,376 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:15,376 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:17,640 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:17,640 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:19,904 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:19,904 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:21,419 DEBUG   HandlerThread:15816 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-07 19:12:21,421 INFO    HandlerThread:15816 [system_monitor.py:probe():216] Finished publishing system info
+2023-10-07 19:12:21,446 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:21,446 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: keepalive
+2023-10-07 19:12:21,446 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:21,446 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: keepalive
+2023-10-07 19:12:21,447 DEBUG   SenderThread:15816 [sender.py:send():380] send: files
+2023-10-07 19:12:21,447 INFO    SenderThread:15816 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-07 19:12:21,457 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-07 19:12:21,458 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: stop_status
+2023-10-07 19:12:21,461 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:12:21,680 DEBUG   SenderThread:15816 [sender.py:send():380] send: telemetry
+2023-10-07 19:12:22,105 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\conda-environment.yaml
+2023-10-07 19:12:22,105 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\wandb-metadata.json
+2023-10-07 19:12:22,106 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:12:22,108 INFO    wandb-upload_0:15816 [upload_job.py:push():131] Uploaded file C:\Users\tyu06\AppData\Local\Temp\tmpb83pk9zlwandb\nyz9njig-wandb-metadata.json
+2023-10-07 19:12:22,176 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:22,177 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:23,468 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:24,128 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:12:24,474 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:24,475 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:26,142 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:12:26,751 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:26,751 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:28,513 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:29,028 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:29,028 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:31,056 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:31,057 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:32,203 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:12:33,091 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:33,091 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:34,217 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:34,219 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:12:35,114 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:35,114 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:36,475 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:12:36,476 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-07 19:12:36,476 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: stop_status
+2023-10-07 19:12:37,144 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:37,144 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:39,170 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:39,170 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:39,688 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:40,276 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\config.yaml
+2023-10-07 19:12:41,211 ERROR   gpu       :15816 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-10-07 19:12:41,228 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:41,228 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:43,251 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:43,251 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:44,932 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:45,278 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:45,278 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:47,301 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:47,302 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:49,320 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:49,320 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:49,961 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:51,491 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:12:51,492 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-07 19:12:51,493 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: stop_status
+2023-10-07 19:12:51,647 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:51,647 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:53,669 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:53,670 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:55,697 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:55,697 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:55,786 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:12:57,717 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:57,717 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:59,740 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:12:59,740 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:00,848 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:13:02,079 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:02,079 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:04,104 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:04,105 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:05,885 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:13:06,140 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:06,140 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:06,495 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:13:06,510 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-07 19:13:06,510 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: stop_status
+2023-10-07 19:13:08,163 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:08,163 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:08,537 DEBUG   SystemMonitor:15816 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-10-07 19:13:08,537 DEBUG   SenderThread:15816 [sender.py:send():380] send: stats
+2023-10-07 19:13:10,193 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:10,194 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:10,602 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:13:11,571 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:13:12,228 ERROR   gpu       :15816 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-10-07 19:13:12,243 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:12,243 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:14,584 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:14,584 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:14,643 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:13:16,613 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:16,613 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:17,483 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:13:18,631 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:18,631 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:20,655 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:20,655 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:21,491 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:13:21,522 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-07 19:13:21,523 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: stop_status
+2023-10-07 19:13:22,672 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:22,673 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:22,767 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:13:25,029 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:25,029 ERROR   gpu       :15816 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-07 19:13:26,615 DEBUG   SenderThread:15816 [sender.py:send():380] send: exit
+2023-10-07 19:13:26,615 INFO    SenderThread:15816 [sender.py:send_exit():585] handling exit code: 1
+2023-10-07 19:13:26,615 INFO    SenderThread:15816 [sender.py:send_exit():587] handling runtime: 78
+2023-10-07 19:13:26,616 INFO    SenderThread:15816 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-07 19:13:26,617 INFO    SenderThread:15816 [sender.py:send_exit():593] send defer
+2023-10-07 19:13:26,617 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,617 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 0
+2023-10-07 19:13:26,617 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,617 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-10-07 19:13:26,617 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 1
+2023-10-07 19:13:26,618 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,618 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 1
+2023-10-07 19:13:26,618 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,618 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-10-07 19:13:26,618 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 2
+2023-10-07 19:13:26,618 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,618 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 2
+2023-10-07 19:13:26,618 INFO    HandlerThread:15816 [system_monitor.py:finish():190] Stopping system monitor
+2023-10-07 19:13:26,618 DEBUG   SystemMonitor:15816 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-10-07 19:13:26,619 DEBUG   SystemMonitor:15816 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-10-07 19:13:26,619 INFO    HandlerThread:15816 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-07 19:13:26,626 INFO    HandlerThread:15816 [interfaces.py:finish():202] Joined disk monitor
+2023-10-07 19:13:26,651 ERROR   gpu       :15816 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-10-07 19:13:26,651 INFO    HandlerThread:15816 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-07 19:13:26,651 INFO    HandlerThread:15816 [interfaces.py:finish():202] Joined memory monitor
+2023-10-07 19:13:26,652 INFO    HandlerThread:15816 [interfaces.py:finish():202] Joined network monitor
+2023-10-07 19:13:26,652 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,652 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-10-07 19:13:26,652 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 3
+2023-10-07 19:13:26,653 DEBUG   SenderThread:15816 [sender.py:send():380] send: stats
+2023-10-07 19:13:26,653 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,653 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 3
+2023-10-07 19:13:26,653 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,653 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-10-07 19:13:26,653 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 4
+2023-10-07 19:13:26,654 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,654 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 4
+2023-10-07 19:13:26,654 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,654 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-10-07 19:13:26,654 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 5
+2023-10-07 19:13:26,654 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,654 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 5
+2023-10-07 19:13:26,655 DEBUG   SenderThread:15816 [sender.py:send():380] send: summary
+2023-10-07 19:13:26,655 INFO    SenderThread:15816 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-10-07 19:13:26,656 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,656 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-10-07 19:13:26,656 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 6
+2023-10-07 19:13:26,656 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,656 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 6
+2023-10-07 19:13:26,656 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,657 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-10-07 19:13:26,657 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 7
+2023-10-07 19:13:26,657 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:13:26,657 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:26,657 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 7
+2023-10-07 19:13:26,657 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:26,657 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-10-07 19:13:26,774 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\wandb-summary.json
+2023-10-07 19:13:27,629 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-07 19:13:28,794 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:13:30,030 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 8
+2023-10-07 19:13:30,031 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: poll_exit
+2023-10-07 19:13:30,031 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:30,031 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 8
+2023-10-07 19:13:30,031 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:30,031 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-10-07 19:13:30,031 INFO    SenderThread:15816 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-07 19:13:30,031 INFO    SenderThread:15816 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-10-07 19:13:30,038 INFO    SenderThread:15816 [job_builder.py:build():369] adding wandb-job metadata file
+2023-10-07 19:13:30,047 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 9
+2023-10-07 19:13:30,047 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:30,047 DEBUG   SenderThread:15816 [sender.py:send():380] send: artifact
+2023-10-07 19:13:30,047 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 9
+2023-10-07 19:13:30,813 INFO    Thread-16 :15816 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:13:30,878 INFO    SenderThread:15816 [sender.py:send_artifact():1456] sent artifact job-https___github.com_pydaxing_DeepKnowledgeTracing-DKT-Pytorch.git_DKT_KnowledgeTracing_evaluation_run.py - {'id': 'QXJ0aWZhY3Q6NTk0MjIzODU1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwNDE4MTY5MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTk2MTgwNDQ3', 'versionIndex': 2}}}
+2023-10-07 19:13:30,878 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:30,878 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-10-07 19:13:30,878 INFO    SenderThread:15816 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-07 19:13:31,825 INFO    SenderThread:15816 [dir_watcher.py:finish():388] scan: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files
+2023-10-07 19:13:31,826 INFO    SenderThread:15816 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\conda-environment.yaml conda-environment.yaml
+2023-10-07 19:13:31,826 INFO    SenderThread:15816 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\config.yaml config.yaml
+2023-10-07 19:13:31,830 INFO    SenderThread:15816 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log output.log
+2023-10-07 19:13:31,830 INFO    SenderThread:15816 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\requirements.txt requirements.txt
+2023-10-07 19:13:31,834 INFO    SenderThread:15816 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\wandb-metadata.json wandb-metadata.json
+2023-10-07 19:13:31,834 INFO    SenderThread:15816 [dir_watcher.py:finish():402] scan save: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\wandb-summary.json wandb-summary.json
+2023-10-07 19:13:31,835 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 10
+2023-10-07 19:13:31,835 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:31,837 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 10
+2023-10-07 19:13:31,841 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:31,841 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-10-07 19:13:31,841 INFO    SenderThread:15816 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-07 19:13:32,198 INFO    wandb-upload_0:15816 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\conda-environment.yaml
+2023-10-07 19:13:32,319 INFO    wandb-upload_1:15816 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\config.yaml
+2023-10-07 19:13:32,449 INFO    wandb-upload_2:15816 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\output.log
+2023-10-07 19:13:32,452 INFO    wandb-upload_3:15816 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\requirements.txt
+2023-10-07 19:13:32,453 INFO    wandb-upload_4:15816 [upload_job.py:push():131] Uploaded file D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\files\wandb-summary.json
+2023-10-07 19:13:33,019 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: keepalive
+2023-10-07 19:13:33,020 INFO    Thread-15 :15816 [sender.py:transition_state():613] send defer: 11
+2023-10-07 19:13:33,022 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:33,023 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 11
+2023-10-07 19:13:33,024 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:33,025 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-10-07 19:13:33,025 INFO    SenderThread:15816 [file_pusher.py:join():181] waiting for file pusher
+2023-10-07 19:13:33,025 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 12
+2023-10-07 19:13:33,026 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:33,026 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 12
+2023-10-07 19:13:33,027 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:33,027 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-10-07 19:13:33,027 INFO    SenderThread:15816 [file_stream.py:finish():595] file stream finish called
+2023-10-07 19:13:33,584 INFO    SenderThread:15816 [file_stream.py:finish():599] file stream finish is done
+2023-10-07 19:13:33,585 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 13
+2023-10-07 19:13:33,585 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:33,585 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 13
+2023-10-07 19:13:33,586 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:33,586 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-10-07 19:13:33,587 INFO    SenderThread:15816 [sender.py:transition_state():613] send defer: 14
+2023-10-07 19:13:33,595 DEBUG   SenderThread:15816 [sender.py:send():380] send: final
+2023-10-07 19:13:33,595 DEBUG   SenderThread:15816 [sender.py:send():380] send: footer
+2023-10-07 19:13:33,604 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: defer
+2023-10-07 19:13:33,605 INFO    HandlerThread:15816 [handler.py:handle_request_defer():170] handle defer: 14
+2023-10-07 19:13:33,605 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: defer
+2023-10-07 19:13:33,606 INFO    SenderThread:15816 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-10-07 19:13:33,608 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-07 19:13:33,608 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: server_info
+2023-10-07 19:13:33,608 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: get_summary
+2023-10-07 19:13:33,609 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: poll_exit
+2023-10-07 19:13:33,609 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: sampled_history
+2023-10-07 19:13:33,610 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: server_info
+2023-10-07 19:13:33,610 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-07 19:13:33,682 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: job_info
+2023-10-07 19:13:33,827 DEBUG   SenderThread:15816 [sender.py:send_request():407] send_request: job_info
+2023-10-07 19:13:33,828 INFO    MainThread:15816 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-10-07 19:13:33,828 INFO    MainThread:15816 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-10-07 19:13:33,829 INFO    MainThread:15816 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-10-07 19:13:35,836 DEBUG   HandlerThread:15816 [handler.py:handle_request():144] handle_request: status_report
+2023-10-07 19:13:37,622 WARNING StreamThr :15816 [internal.py:is_dead():414] Internal process exiting, parent pid 26540 disappeared
+2023-10-07 19:13:37,622 ERROR   StreamThr :15816 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-10-07 19:13:37,847 INFO    WriterThread:15816 [datastore.py:close():294] close: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231007_191207-p4ad4xob\run-p4ad4xob.wandb
+2023-10-07 19:13:37,847 INFO    SenderThread:15816 [sender.py:finish():1534] shutting down sender
+2023-10-07 19:13:37,847 INFO    SenderThread:15816 [file_pusher.py:finish():175] shutting down file pusher
+2023-10-07 19:13:37,847 INFO    HandlerThread:15816 [handler.py:finish():844] shutting down handler
+2023-10-07 19:13:37,847 INFO    SenderThread:15816 [file_pusher.py:join():181] waiting for file pusher

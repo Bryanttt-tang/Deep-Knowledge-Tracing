@@ -1,0 +1,121 @@
+Dataset: LON_course4, Learning Rate: 0.002
+epoch: 0
+loading train data:    : 700it [00:01, 481.99it/s]
+loading test data:    : 160it [00:00, 1648.17it/s]
+Training:    :   0%|          | 0/110 [00:00<?, ?it/s]..\evaluation\eval.py:31: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training:    : 100%|██████████| 110/110 [01:57<00:00,  1.07s/it]
+Testing:    :   0%|          | 0/26 [00:00<?, ?it/s]..\evaluation\eval.py:63: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+Testing:    :  73%|███████▎  | 19/26 [00:06<00:02,  2.66it/s]
+auc:0.6810682803361647 f1: 0.4266449820424206 recall: 0.33516698016112434 precision: 0.5868025351062508
+Testing:    : 100%|██████████| 26/26 [00:09<00:00,  2.67it/s]
+Training:    :   0%|          | 0/110 [00:00<?, ?it/s]..\evaluation\eval.py:31: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training:    : 100%|██████████| 110/110 [01:44<00:00,  1.05it/s]
+Testing:    :   0%|          | 0/26 [00:00<?, ?it/s]..\evaluation\eval.py:63: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+Testing:    : 100%|██████████| 26/26 [00:08<00:00,  3.00it/s]
+auc:0.6870663553741522 f1: 0.4267947863267511 recall: 0.3294531000461369 precision: 0.6057817802140434
+epoch: 2
+Training:    :   0%|          | 0/110 [00:00<?, ?it/s]..\evaluation\eval.py:31: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+
+
+
+
+
+
+
+
+
+

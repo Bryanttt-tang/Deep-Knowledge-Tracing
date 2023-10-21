@@ -1,0 +1,42 @@
+
+loading train data:    : 0it [00:00, ?it/s]
+
+loading train data:    : 3361it [00:06, 523.45it/s]
+loading test data:    : 856it [00:00, 2570.36it/s]
+epoch: 0
+> d:\ethz\internship\adaptive-e-learning-for-educational-recommendation-system\deepknowledgetracing-dkt-pytorch\dkt\knowledgetracing\evaluation\eval.py(44)train_epoch()
+-> pred = model(batch)
+(Pdb) (Pdb) (Pdb) (Pdb) (Pdb)
+(Pdb) (Pdb) (Pdb) (Pdb) (Pdb) > d:\ethz\internship\adaptive-e-learning-for-educational-recommendation-system\deepknowledgetracing-dkt-pytorch\dkt\knowledgetracing\model\rnnmodel.py(20)forward()
+-> h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim))
+
+(Pdb) (Pdb) *** RuntimeError: Input and hidden tensors are not at the same device, found input tensor at cuda:0 and hidden tensor at cpu
+(Pdb) device(type='cuda', index=0)
+(Pdb) device(type='cpu')
+(Pdb) tensor([[[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]]], device='cuda:0')
+(Pdb) *** AttributeError: 'DKT' object has no attribute 'device'
+Training:    :   0%|          | 0/160 [01:09<?, ?it/s]
+Traceback (most recent call last):
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\run.py", line 41, in <module>
+    model, optimizer, train_loss = eval.train(trainLoaders, model, optimizer_adgd, loss_func,device)
+  File "..\evaluation\eval.py", line 88, in train
+    model, optimizer, loss = train_epoch(model, trainLoaders[i], optimizer, lossFunc,device)
+  File "..\evaluation\eval.py", line 44, in train_epoch
+    pred = model(batch)
+  File "C:\Users\tyu06\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "..\model\RNNModel.py", line 20, in forward
+    h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim))
+  File "..\model\RNNModel.py", line 20, in forward
+    h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim))
+  File "C:\Users\tyu06\anaconda3\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\tyu06\anaconda3\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

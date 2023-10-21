@@ -1,0 +1,10 @@
+
+Dataset: kddcup2010, Learning Rate: 0.002
+Traceback (most recent call last):
+  File "d:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch/DKT/KnowledgeTracing/evaluation/run.py", line 36, in <module>
+    model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\model\RNNModel.py", line 14, in __init__
+    self.rnn = nn.LSTM(input_dim, hidden_dim, layer_dim, batch_first=True,nonlinearity='tanh')
+  File "C:\Users\tyu06\anaconda3\lib\site-packages\torch\nn\modules\rnn.py", line 665, in __init__
+    super(LSTM, self).__init__('LSTM', *args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'nonlinearity'

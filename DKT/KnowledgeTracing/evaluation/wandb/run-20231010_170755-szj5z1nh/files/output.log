@@ -1,0 +1,71 @@
+
+Dataset: synthetic, Learning Rate: 0.002
+loading train data:    : 0it [00:00, ?it/s]
+loading train data:    : 3200it [00:02, 1149.33it/s]
+loading test data:    : 800it [00:00, 4095.06it/s]
+Training:    :   0%|          | 0/50 [00:00<?, ?it/s]..\evaluation\eval.py:31: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training:    : 100%|██████████| 50/50 [02:10<00:00,  2.62s/it]
+Testing:    :   0%|          | 0/13 [00:00<?, ?it/s]..\evaluation\eval.py:76: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+
+
+
+
+
+
+
+
+
+Testing:    : 100%|██████████| 13/13 [00:32<00:00,  2.53s/it]
+Traceback (most recent call last):
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\run.py", line 43, in <module>
+    val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
+  File "..\evaluation\eval.py", line 98, in test
+    prediction = torch.cat([prediction, pred_epoch]) # torch size([39200])
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cpu and cuda:0! (when checking argument for argument tensors in method wrapper___cat)

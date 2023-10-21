@@ -1,0 +1,64 @@
+
+Dataset: static2011, Learning Rate: 0.002
+loading train data:    : 267it [00:00, 505.68it/s]
+loading test data:    : 66it [00:00, 741.51it/s]
+Training:    :   0%|          | 0/35 [00:00<?, ?it/s]
+Training:    :   0%|          | 0/35 [00:00<?, ?it/s]D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\eval.py:31: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training:    : 100%|██████████| 35/35 [02:07<00:00,  3.65s/it]
+Testing:    :   0%|          | 0/9 [00:00<?, ?it/s]D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\eval.py:76: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+
+
+
+
+
+Testing:    :  67%|██████▋   | 6/9 [00:24<00:12,  4.07s/it]
+Traceback (most recent call last):
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\run.py", line 49, in <module>
+    val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\eval.py", line 97, in test
+    pred_epoch, gold_epoch, val_loss = test_epoch(model, testLoaders[i],loss_func,device)
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\eval.py", line 63, in test_epoch
+    pred = model(batch)# output: torch.size([batch_size,max_step,n_questions])
+  File "C:\Users\tyu06\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\model\RNNModel.py", line 20, in forward
+    out,hn = self.rnn(x, h0)
+  File "C:\Users\tyu06\anaconda3\lib\site-packages\torch\nn\modules\module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\tyu06\anaconda3\lib\site-packages\torch\nn\modules\rnn.py", line 471, in forward
+    result = _VF.rnn_tanh(input, hx, self._flat_weights, self.bias, self.num_layers,
+RuntimeError: CUDA out of memory. Tried to allocate 64.00 MiB (GPU 0; 2.00 GiB total capacity; 986.75 MiB already allocated; 39.85 MiB free; 1.06 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

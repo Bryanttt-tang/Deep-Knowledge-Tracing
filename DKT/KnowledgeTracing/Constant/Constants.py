@@ -1,3 +1,8 @@
+import sys
+import os
+# curPath = os.path.abspath(os.path.dirname(__file__))
+# GRANDFA = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+# sys.path.append(curPath) 
 Dpath = '../../KTDataset'
 
 datasets = {
@@ -6,6 +11,12 @@ datasets = {
     'assist2017' : 'assist2017',
     'static2011' : 'static2011',
     'kddcup2010' : 'kddcup2010',
+    'LON_course0' : 'LON_course0',
+    'LON_course4' : 'LON_course4',
+    'LON_course27' : 'LON_course27',
+    'LON_course_total' : 'LON_course_total',
+    'LON_course_combined' : 'LON_course_combined',
+    'LON_course_comb_df1' : 'LON_course_comb_df1',
     'synthetic' : 'synthetic'
 }
 
@@ -15,17 +26,22 @@ numbers = {
     'assist2015' : 100,
     'assist2017' : 102,
     'static2011' : 1224, 
-    'kddcup2010' : 661,  
+    'kddcup2010' : 661,
+    'LON_course0' : 214,
+    'LON_course4' : 161,
+    'LON_course27' : 193,
+    'LON_course_total' : 2796,
+    'LON_course_combined' : 772,
+    'LON_course_comb_df1' : 493,
     'synthetic' : 50
 }
 
-DATASET = datasets['static2011']
-NUM_OF_QUESTIONS = numbers['static2011']
-# the max step of RNN model
-MAX_STEP = 50
-BATCH_SIZE = 64
+DATASET = datasets['LON_course_comb_df1']
+NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
+MAX_STEP = 50 # the sequence length of RNN model
+BATCH_SIZE = 128
 LR = 0.002
-EPOCH = 1000
+EPOCH = 50
 #input dimension
 INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension

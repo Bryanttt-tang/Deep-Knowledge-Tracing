@@ -1,0 +1,12 @@
+
+Dataset: LON_course_comb_df1, Learning Rate: 0.002
+Traceback (most recent call last):
+  File "d:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch/DKT/KnowledgeTracing/evaluation/run.py", line 42, in <module>
+    trainLoaders, testLoaders = getLoader(C.DATASET)
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\data\dataloader.py", line 80, in getLoader
+    trainLoader = getTrainLoader(C.Dpath + '/LON_course/comb_df1_train.csv')
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\data\dataloader.py", line 14, in getTrainLoader
+    trainques, trainans = handle.getTrainData() # size: trainqus.reshape([-1, self.maxstep])
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\data\readdata.py", line 15, in getTrainData
+    with open(self.path, 'r') as train:
+FileNotFoundError: [Errno 2] No such file or directory: '../../KTDataset/LON_course/comb_df1_train.csv'

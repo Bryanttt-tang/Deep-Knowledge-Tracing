@@ -1,0 +1,82 @@
+
+Dataset: assist2009, Learning Rate: 0.002
+
+loading train data:    : 2033it [00:02, 1015.92it/s]
+loading train data:    : 3361it [00:06, 523.50it/s]
+loading test data:    : 856it [00:00, 2452.98it/s]
+Training:    :   0%|          | 0/160 [00:00<?, ?it/s]
+> d:\ethz\internship\adaptive-e-learning-for-educational-recommendation-system\deepknowledgetracing-dkt-pytorch\dkt\knowledgetracing\evaluation\eval.py(44)train_epoch()
+-> pred = model(batch)
+(Pdb) *** AttributeError: 'DKT' object has no attribute 'device'
+(Pdb) *** AttributeError: 'DKT' object has no attribute 'device'
+(Pdb) DKT(
+  (rnn): RNN(248, 200, batch_first=True)
+  (fc): Linear(in_features=200, out_features=124, bias=True)
+  (sig): Sigmoid()
+)
+(Pdb) device(type='cuda')
+(Pdb) tensor([[[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 1.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        ...,
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]],
+        [[0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         ...,
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.],
+         [0., 0., 0.,  ..., 0., 0., 0.]]], device='cuda:0')
+(Pdb) DKT(
+  (rnn): RNN(248, 200, batch_first=True)
+  (fc): Linear(in_features=200, out_features=124, bias=True)
+  (sig): Sigmoid()
+)
+(Pdb) *** AttributeError: 'DKT' object has no attribute 'RNN'
+(Pdb) *** RuntimeError: Input and hidden tensors are not at the same device, found input tensor at cuda:0 and hidden tensor at cpu
+Training:    :   0%|          | 0/160 [01:31<?, ?it/s]
+Traceback (most recent call last):
+  File "D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\run.py", line 41, in <module>
+    model, optimizer, train_loss = eval.train(trainLoaders, model, optimizer_adgd, loss_func,device)
+  File "..\evaluation\eval.py", line 88, in train
+    model, optimizer, loss = train_epoch(model, trainLoaders[i], optimizer, lossFunc,device)
+  File "..\evaluation\eval.py", line 44, in train_epoch
+    pred = model(batch)
+  File "..\evaluation\eval.py", line 44, in train_epoch
+    pred = model(batch)
+  File "C:\Users\tyu06\anaconda3\lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "C:\Users\tyu06\anaconda3\lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

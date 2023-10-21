@@ -1,0 +1,136 @@
+2023-10-10 18:01:23,162 INFO    StreamThr :18812 [internal.py:wandb_internal():86] W&B internal server running at pid: 18812, started at: 2023-10-10 18:01:23.160267
+2023-10-10 18:01:23,166 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status
+2023-10-10 18:01:23,173 INFO    WriterThread:18812 [datastore.py:open_for_write():85] open: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\run-t8x8fdjx.wandb
+2023-10-10 18:01:23,176 DEBUG   SenderThread:18812 [sender.py:send():380] send: header
+2023-10-10 18:01:23,259 DEBUG   SenderThread:18812 [sender.py:send():380] send: run
+2023-10-10 18:01:23,808 INFO    SenderThread:18812 [dir_watcher.py:__init__():211] watching files in: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files
+2023-10-10 18:01:23,808 INFO    SenderThread:18812 [sender.py:_start_run_threads():1122] run started: t8x8fdjx with start time 1696953683.162149
+2023-10-10 18:01:23,833 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: check_version
+2023-10-10 18:01:23,833 DEBUG   SenderThread:18812 [sender.py:send_request():407] send_request: check_version
+2023-10-10 18:01:23,986 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: run_start
+2023-10-10 18:01:24,171 DEBUG   HandlerThread:18812 [system_info.py:__init__():32] System info init
+2023-10-10 18:01:24,171 DEBUG   HandlerThread:18812 [system_info.py:__init__():47] System info init done
+2023-10-10 18:01:24,171 INFO    HandlerThread:18812 [system_monitor.py:start():181] Starting system monitor
+2023-10-10 18:01:24,171 INFO    SystemMonitor:18812 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-10 18:01:24,171 INFO    HandlerThread:18812 [system_monitor.py:probe():201] Collecting system info
+2023-10-10 18:01:24,177 INFO    SystemMonitor:18812 [interfaces.py:start():190] Started cpu monitoring
+2023-10-10 18:01:24,177 INFO    SystemMonitor:18812 [interfaces.py:start():190] Started disk monitoring
+2023-10-10 18:01:24,179 INFO    SystemMonitor:18812 [interfaces.py:start():190] Started gpu monitoring
+2023-10-10 18:01:24,180 INFO    SystemMonitor:18812 [interfaces.py:start():190] Started memory monitoring
+2023-10-10 18:01:24,195 INFO    SystemMonitor:18812 [interfaces.py:start():190] Started network monitoring
+2023-10-10 18:01:24,233 DEBUG   HandlerThread:18812 [system_info.py:probe():196] Probing system
+2023-10-10 18:01:24,238 DEBUG   HandlerThread:18812 [system_info.py:_probe_git():181] Probing git
+2023-10-10 18:01:24,247 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:24,247 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:24,381 DEBUG   HandlerThread:18812 [system_info.py:_probe_git():189] Probing git done
+2023-10-10 18:01:24,381 DEBUG   HandlerThread:18812 [system_info.py:probe():244] Probing system done
+2023-10-10 18:01:24,381 DEBUG   HandlerThread:18812 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.8.8', 'heartbeatAt': '2023-10-10T16:01:24.234376', 'startedAt': '2023-10-10T16:01:23.127018', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'run.py', 'codePathLocal': 'run.py', 'codePath': 'DKT\\KnowledgeTracing\\evaluation\\run.py', 'git': {'remote': 'https://github.com/pydaxing/DeepKnowledgeTracing-DKT-Pytorch.git', 'commit': '49418a2a50164318844b32e6f41b69032501ee9b'}, 'email': 'tangyu990628@gmail.com', 'root': 'D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch', 'host': 'LAPTOP-HVTN1FK1', 'username': 'tyu06', 'executable': 'C:\\Users\\tyu06\\anaconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2301.0, 'min': 0.0, 'max': 2301.0}, 'cpu_freq_per_core': [{'current': 2301.0, 'min': 0.0, 'max': 2301.0}], 'disk': {'/': {'total': 433.9125785827637, 'used': 295.8174858093262}}, 'gpu': 'GeForce MX350', 'gpu_count': 1, 'gpu_devices': [{'name': 'GeForce MX350', 'memory_total': 2147483648}], 'memory': {'total': 15.870410919189453}}
+2023-10-10 18:01:24,381 INFO    HandlerThread:18812 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-10 18:01:24,381 INFO    HandlerThread:18812 [system_monitor.py:probe():214] Publishing system info
+2023-10-10 18:01:24,381 DEBUG   HandlerThread:18812 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-10 18:01:24,383 DEBUG   HandlerThread:18812 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-10 18:01:24,383 DEBUG   HandlerThread:18812 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-10 18:01:24,824 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\conda-environment.yaml
+2023-10-10 18:01:24,825 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\requirements.txt
+2023-10-10 18:01:26,425 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:26,426 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:27,361 DEBUG   HandlerThread:18812 [system_info.py:_save_conda():87] Saving conda packages done
+2023-10-10 18:01:27,363 INFO    HandlerThread:18812 [system_monitor.py:probe():216] Finished publishing system info
+2023-10-10 18:01:27,405 DEBUG   SenderThread:18812 [sender.py:send():380] send: files
+2023-10-10 18:01:27,406 INFO    SenderThread:18812 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-10-10 18:01:27,444 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-10 18:01:27,445 DEBUG   SenderThread:18812 [sender.py:send_request():407] send_request: stop_status
+2023-10-10 18:01:27,451 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-10 18:01:27,788 DEBUG   SenderThread:18812 [sender.py:send():380] send: telemetry
+2023-10-10 18:01:27,849 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\wandb-metadata.json
+2023-10-10 18:01:27,850 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:28,095 INFO    wandb-upload_0:18812 [upload_job.py:push():131] Uploaded file C:\Users\tyu06\AppData\Local\Temp\tmp7q1fsyaqwandb\de9b2w6r-wandb-metadata.json
+2023-10-10 18:01:28,460 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:28,461 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:28,795 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:01:29,864 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:30,502 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:30,502 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:32,539 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:32,539 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:33,917 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:01:34,563 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:34,564 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:34,919 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:36,592 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:36,592 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:36,934 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:38,633 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:38,633 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:39,573 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:01:39,967 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:40,672 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:40,674 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:42,459 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-10 18:01:42,459 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-10 18:01:42,460 DEBUG   SenderThread:18812 [sender.py:send_request():407] send_request: stop_status
+2023-10-10 18:01:42,701 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:42,702 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:44,010 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:44,728 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:44,729 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:45,204 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:01:46,769 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:46,769 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:48,176 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:48,804 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:48,804 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:50,832 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:50,833 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:51,201 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:01:52,881 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:52,882 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:54,237 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:54,928 ERROR   gpu       :18812 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-10-10 18:01:54,951 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:54,952 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:56,787 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:01:56,982 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:56,982 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:57,260 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\config.yaml
+2023-10-10 18:01:57,452 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-10 18:01:57,453 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-10 18:01:57,453 DEBUG   SenderThread:18812 [sender.py:send_request():407] send_request: stop_status
+2023-10-10 18:01:58,266 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:01:59,008 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:01:59,008 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:01,046 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:01,046 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:02,219 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:02:02,307 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:02:03,074 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:03,075 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:04,333 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:02:05,103 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:05,103 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:06,352 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:02:07,133 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:07,134 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:07,949 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:02:09,165 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:09,166 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:10,378 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:02:11,194 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:11,194 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:12,404 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:02:12,473 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: internal_messages
+2023-10-10 18:02:12,473 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-10 18:02:12,473 DEBUG   SenderThread:18812 [sender.py:send_request():407] send_request: stop_status
+2023-10-10 18:02:13,232 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:13,233 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:13,752 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:02:15,264 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:15,264 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:16,455 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:02:17,292 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:17,292 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:18,483 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log
+2023-10-10 18:02:19,337 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:19,338 ERROR   gpu       :18812 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-10 18:02:19,676 DEBUG   HandlerThread:18812 [handler.py:handle_request():144] handle_request: status_report
+2023-10-10 18:02:20,495 INFO    Thread-16 :18812 [dir_watcher.py:_on_file_modified():288] file/dir modified: D:\ETHz\Internship\adaptive-e-learning-for-educational-recommendation-system\DeepKnowledgeTracing-DKT-Pytorch\DKT\KnowledgeTracing\evaluation\wandb\run-20231010_180123-t8x8fdjx\files\output.log

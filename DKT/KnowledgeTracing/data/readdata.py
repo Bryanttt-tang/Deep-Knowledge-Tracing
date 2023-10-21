@@ -13,16 +13,19 @@ class DataReader():
         trainqus = np.array([])
         trainans = np.array([])
         with open(self.path, 'r') as train:
-            for len, ques, ans in tqdm.tqdm(itertools.zip_longest(*[train] * 3), desc='loading train data:    ', mininterval=2):
-                len = int(len.strip().strip(','))
+            for length, ques, ans in tqdm.tqdm(itertools.zip_longest(*[train] * 3), desc='loading train data:    ', mininterval=2):
+                length = int(length.strip().strip(',')) # total learning trajectory of individual student
                 ques = np.array(ques.strip().strip(',').split(',')).astype(np.int)
                 ans = np.array(ans.strip().strip(',').split(',')).astype(np.int)
-                mod = 0 if len%self.maxstep == 0 else (self.maxstep - len%self.maxstep)
-                zero = np.zeros(mod) - 1
+                mod = 0 if length%self.maxstep == 0 else (self.maxstep - length%self.maxstep)
+                zero = np.zeros(mod) - 1 # padding 0 if the learning sequence is not long
                 ques = np.append(ques, zero)
                 ans = np.append(ans, zero)
-                trainqus = np.append(trainqus, ques).astype(np.int)
+                trainqus = np.append(trainqus, ques).astype(np.int) # an array, with total lenght= 1056+504+...
                 trainans = np.append(trainans, ans).astype(np.int)
+                #print(trainqus)
+                #print(trainqus.reshape([-1, self.maxstep]))
+                #breakpoint()
         return trainqus.reshape([-1, self.maxstep]), trainans.reshape([-1, self.maxstep])
 
 
@@ -30,14 +33,15 @@ class DataReader():
         testqus = np.array([])
         testans = np.array([])
         with open(self.path, 'r') as test:
-            for len, ques, ans in tqdm.tqdm(itertools.zip_longest(*[test] * 3), desc='loading test data:    ', mininterval=2):
-                len = int(len.strip().strip(','))
+            for length, ques, ans in tqdm.tqdm(itertools.zip_longest(*[test] * 3), desc='loading test data:    ', mininterval=2):
+                length = int(length.strip().strip(','))
                 ques = np.array(ques.strip().strip(',').split(',')).astype(int)
                 ans = np.array(ans.strip().strip(',').split(',')).astype(int)
-                mod = 0 if len % self.maxstep == 0 else (self.maxstep - len % self.maxstep)
+                mod = 0 if length % self.maxstep == 0 else (self.maxstep - length % self.maxstep)
                 zero = np.zeros(mod) - 1
                 ques = np.append(ques, zero)
                 ans = np.append(ans, zero)
                 testqus = np.append(testqus, ques).astype(np.int)
                 testans = np.append(testans, ans).astype(np.int)
+                #breakpoint()
         return testqus.reshape([-1, self.maxstep]), testans.reshape([-1, self.maxstep])
