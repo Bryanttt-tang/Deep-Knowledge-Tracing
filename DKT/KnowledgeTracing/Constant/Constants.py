@@ -36,8 +36,8 @@ numbers = {
     'synthetic' : 50
 }
 
-DATASET = datasets['LON_course_comb_df1']
-NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
+DATASET = datasets['kddcup2010']
+NUM_OF_QUESTIONS = numbers['kddcup2010']
 MAX_STEP = 50 # the sequence length of RNN model
 BATCH_SIZE = 128
 LR = 0.002

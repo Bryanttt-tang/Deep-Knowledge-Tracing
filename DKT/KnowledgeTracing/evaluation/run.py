@@ -8,6 +8,7 @@ sys.path.append(GRANDFA)
 # sys.path.append('curPath')
 # sys.path.append('../')
 from model.RNNModel import DKT
+from model.SAKT.SAKTmodel import SAKTModel
 from data.dataloader import getTrainLoader, getTestLoader, getLoader
 from Constant import Constants as C
 import torch.optim as optim
@@ -21,19 +22,22 @@ import wandb
 #     device = torch.device('cpu')
 device = torch.device('cpu')
 # Initialize Weights and Biases with your API key and project name
-wandb.init(
-    project="DKT-trial 1",
-    name="trial-Lon_comb_df1_LSTM",
-    # config={
-    #     "learning_rate": 0.001,
-    #     "architecture": "CNN",
-    #     "dataset": "CIFAR-10"
-    # }
-)
+# wandb.init(
+#     project="DKT-trial 1",
+#     name="trial-kddcup_LSTM",
+#
+#
+#     # config={
+#     #     "learning_rate": 0.001,
+#     #     "architecture": "CNN",
+#     #     "dataset": "CIFAR-10"
+#     # }
+# )
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
 model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
+#model = SAKTModel(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
 optimizer_adam = optim.Adam(model.parameters(), lr=C.LR)
 optimizer_adgd = optim.Adagrad(model.parameters(),lr=C.LR)
 # optimizer_adgd.state = {key: value.to(device) for key, value in optimizer_adgd.state.items()}
@@ -50,17 +54,17 @@ for epoch in range(C.EPOCH):
     if val_auc>best_auc:
         best_auc=val_auc
         torch.save(model.state_dict(), 'best_kddcup2010.pth')
-    wandb.log({
-        "train_loss": train_loss
-        # "auc": val_auc,
-        # "epoch": epoch,
-        # "f1": val_f1,
-        # "recall": val_recall,
-        # "precision": val_precision
-    }, step = epoch)
-    wandb.log({"val_loss": val_loss}, step=epoch)
-    wandb.log({"auc": val_auc}, step = epoch)
-    wandb.log({"f1": val_f1}, step=epoch)
-    wandb.log({"recall": val_recall}, step=epoch)
-    wandb.log({"precision": val_precision}, step=epoch)
-wandb.finish()
+#     wandb.log({
+#         "train_loss": train_loss
+#         # "auc": val_auc,
+#         # "epoch": epoch,
+#         # "f1": val_f1,
+#         # "recall": val_recall,
+#         # "precision": val_precision
+#     }, step = epoch)
+#     wandb.log({"val_loss": val_loss}, step=epoch)
+#     wandb.log({"auc": val_auc}, step = epoch)
+#     wandb.log({"f1": val_f1}, step=epoch)
+#     wandb.log({"recall": val_recall}, step=epoch)
+#     wandb.log({"precision": val_precision}, step=epoch)
+# wandb.finish()

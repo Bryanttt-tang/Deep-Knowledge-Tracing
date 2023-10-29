@@ -15,14 +15,14 @@ class DataReader():
         with open(self.path, 'r') as train:
             for length, ques, ans in tqdm.tqdm(itertools.zip_longest(*[train] * 3), desc='loading train data:    ', mininterval=2):
                 length = int(length.strip().strip(',')) # total learning trajectory of individual student
-                ques = np.array(ques.strip().strip(',').split(',')).astype(np.int)
-                ans = np.array(ans.strip().strip(',').split(',')).astype(np.int)
+                ques = np.array(ques.strip().strip(',').split(',')).astype(int)
+                ans = np.array(ans.strip().strip(',').split(',')).astype(int)
                 mod = 0 if length%self.maxstep == 0 else (self.maxstep - length%self.maxstep)
                 zero = np.zeros(mod) - 1 # padding 0 if the learning sequence is not long
                 ques = np.append(ques, zero)
                 ans = np.append(ans, zero)
-                trainqus = np.append(trainqus, ques).astype(np.int) # an array, with total lenght= 1056+504+...
-                trainans = np.append(trainans, ans).astype(np.int)
+                trainqus = np.append(trainqus, ques).astype(int) # an array, with total lenght= 1056+504+...
+                trainans = np.append(trainans, ans).astype(int)
                 #print(trainqus)
                 #print(trainqus.reshape([-1, self.maxstep]))
                 #breakpoint()
