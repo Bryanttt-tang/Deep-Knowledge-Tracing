@@ -41,8 +41,9 @@ def train_epoch(model, trainLoader, optimizer, loss_func, device):
     tot_loss=0
     for batch in tqdm.tqdm(trainLoader, desc='Training:    ', mininterval=2):
         batch = batch.to(device)
+        breakpoint()
+        pred = model(batch).to(device)
         #breakpoint()
-        pred = model(batch)
         loss = loss_func(pred, batch)
         optimizer.zero_grad()
         loss.backward()
