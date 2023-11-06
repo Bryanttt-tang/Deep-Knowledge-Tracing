@@ -41,7 +41,7 @@ class DataReader():
                 zero = np.zeros(mod) - 1
                 ques = np.append(ques, zero)
                 ans = np.append(ans, zero)
-                testqus = np.append(testqus, ques).astype(np.int)
-                testans = np.append(testans, ans).astype(np.int)
+                testqus = np.append(testqus, ques).astype(int)
+                testans = np.append(testans, ans).astype(int)
                 #breakpoint()
         return testqus.reshape([-1, self.maxstep]), testans.reshape([-1, self.maxstep])

@@ -17,6 +17,7 @@ datasets = {
     'LON_course_total' : 'LON_course_total',
     'LON_course_combined' : 'LON_course_combined',
     'LON_course_comb_df1' : 'LON_course_comb_df1',
+    'LON_sem1' : 'LON_sem1',
     'synthetic' : 'synthetic'
 }
 
@@ -33,15 +34,16 @@ numbers = {
     'LON_course_total' : 2796,
     'LON_course_combined' : 772,
     'LON_course_comb_df1' : 493,
+    'LON_sem1' : 1029,
     'synthetic' : 50
 }
 
-DATASET = datasets['kddcup2010']
-NUM_OF_QUESTIONS = numbers['kddcup2010']
-MAX_STEP = 50 # the sequence length of RNN model
-BATCH_SIZE = 128
-LR = 0.002
-EPOCH = 50
+DATASET = datasets['LON_course_comb_df1']
+NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
+MAX_STEP = 10 # the sequence length of RNN model
+BATCH_SIZE = 64
+LR = 0.01
+EPOCH = 250
 #input dimension
 INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension

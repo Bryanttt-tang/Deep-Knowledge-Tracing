@@ -1,0 +1,25 @@
+
+Dataset: LON_sem1, Learning Rate: 0.01
+
+
+
+loading train data:    : 4000it [00:24, 164.44it/s]
+loading test data:    : 0it [00:00, ?it/s]
+loading test data:    : 1045it [00:01, 703.61it/s]
+Training:    :   0%|          | 0/1519 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/./run.py", line 51, in <module>
+    model, optimizer, train_loss = eval.train(trainLoaders, model, optimizer_adgd, loss_func,device)
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/eval.py", line 91, in train
+    model, optimizer, train_loss = train_epoch(model, trainLoaders[i], optimizer, lossFunc,device)
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/eval.py", line 45, in train_epoch
+    pred = model(batch)
+  File "/cluster/home/yutang/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/model/RNNModel.py", line 24, in forward
+    out,hn = self.rnn(x, h0)
+  File "/cluster/home/yutang/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/cluster/home/yutang/miniconda3/lib/python3.9/site-packages/torch/nn/modules/rnn.py", line 509, in forward
+    result = _VF.rnn_tanh(input, hx, self._flat_weights, self.bias, self.num_layers,
+RuntimeError: Input and hidden tensors are not at the same device, found input tensor at cuda:0 and hidden tensor at cpu

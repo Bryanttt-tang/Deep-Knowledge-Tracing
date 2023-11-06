@@ -77,9 +77,14 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/LON_course/combined_course_test.csv')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course_comb_df1':
-        trainLoader = getTrainLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch/DKT/KTDataset/LON_course/comb_df1_train.csv')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/comb_df1_train.csv')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch/DKT/KTDataset/LON_course/comb_df1_test.csv')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/comb_df1_test.csv')
+        testLoaders.append(testLoader)
+    elif dataset == 'LON_sem1':
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course_sem1_train.csv')
+        trainLoaders.append(trainLoader)
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course_sem1_test.csv')
         testLoaders.append(testLoader)
     elif dataset == 'synthetic':
         # trainLoader = getTrainLoader(C.Dpath + '/synthetic/synthetic_train_v0.txt')

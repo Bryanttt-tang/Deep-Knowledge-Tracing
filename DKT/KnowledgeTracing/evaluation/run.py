@@ -15,24 +15,24 @@ import torch.optim as optim
 from evaluation import eval
 import wandb
 
-# if torch.cuda.is_available():
-#     # os.environ["CUDA_VISIBLE_DEVICES"] = cuda
-#     device = torch.device('cuda')
-# else:
-#     device = torch.device('cpu')
-device = torch.device('cpu')
+if torch.cuda.is_available():
+    # os.environ["CUDA_VISIBLE_DEVICES"] = cuda
+    device = torch.device('cuda')
+else:
+    device = torch.device('cpu')
+# device = torch.device('cpu')
 # Initialize Weights and Biases with your API key and project name
-# wandb.init(
-#     project="DKT-trial 1",
-#     name="trial-kddcup_LSTM",
-#
-#
-#     # config={
-#     #     "learning_rate": 0.001,
-#     #     "architecture": "CNN",
-#     #     "dataset": "CIFAR-10"
-#     # }
-# )
+wandb.init(
+    project="DKT-trial 1",
+    name="df1_step=10",
+
+
+    # config={
+    #     "learning_rate": 0.001,
+    #     "architecture": "CNN",
+    #     "dataset": "CIFAR-10"
+    # }
+)
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
@@ -50,21 +50,27 @@ for epoch in range(C.EPOCH):
     print('epoch: ' + str(epoch))
     model, optimizer, train_loss = eval.train(trainLoaders, model, optimizer_adgd, loss_func,device)
     # torch.save(model, f"epoch_{epoch}.pt")
+    train_auc, train_f1, train_recall, train_precision,val_loss=eval.test(trainLoaders, model,loss_func, device)
     val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
     if val_auc>best_auc:
         best_auc=val_auc
-        torch.save(model.state_dict(), 'best_kddcup2010.pth')
-#     wandb.log({
-#         "train_loss": train_loss
-#         # "auc": val_auc,
-#         # "epoch": epoch,
-#         # "f1": val_f1,
-#         # "recall": val_recall,
-#         # "precision": val_precision
-#     }, step = epoch)
-#     wandb.log({"val_loss": val_loss}, step=epoch)
-#     wandb.log({"auc": val_auc}, step = epoch)
-#     wandb.log({"f1": val_f1}, step=epoch)
-#     wandb.log({"recall": val_recall}, step=epoch)
-#     wandb.log({"precision": val_precision}, step=epoch)
-# wandb.finish()
+        torch.save(model.state_dict(), 'best_df1.pth')
+    wandb.log({
+        "train_loss": train_loss
+        # "auc": val_auc,
+        # "epoch": epoch,
+        # "f1": val_f1,
+        # "recall": val_recall,
+        # "precision": val_precision
+    }, step = epoch)
+    wandb.log({"train_auc": train_auc}, step = epoch)
+    wandb.log({"val_auc": val_auc}, step = epoch)
+    wandb.log({"train_f1": train_f1}, step=epoch)
+    wandb.log({"train_recall": train_recall}, step=epoch)
+    wandb.log({"train_precision": train_precision}, step=epoch)
+    
+    wandb.log({"val_loss": val_loss}, step=epoch)
+    wandb.log({"val_f1": val_f1}, step=epoch)
+    wandb.log({"val_recall": val_recall}, step=epoch)
+    wandb.log({"val_precision": val_precision}, step=epoch)
+wandb.finish()
