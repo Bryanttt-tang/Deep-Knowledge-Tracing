@@ -38,12 +38,12 @@ numbers = {
     'synthetic' : 50
 }
 
-DATASET = datasets['LON_course_comb_df1']
-NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
-MAX_STEP = 10 # the sequence length of RNN model
+DATASET = datasets['LON_course4']
+NUM_OF_QUESTIONS = numbers['LON_course4']
+MAX_STEP = 5 # the sequence length of RNN model
 BATCH_SIZE = 64
-LR = 0.01
-EPOCH = 250
+LR = 0.002
+EPOCH = 300
 #input dimension
 INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension

@@ -17,8 +17,8 @@ class DKT(nn.Module):
         self.sig = nn.Sigmoid()
 
     def forward(self, x):
-        # h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim))
-        # c0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim)) # cell state for LSTM
+        # h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim)).to(x.device)
+        # c0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim)).to(x.device) # cell state for LSTM
         # out,(hn, cn) = self.rnn(x, (h0, c0))
         h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim)).to(x.device)
         out,hn = self.rnn(x, h0)

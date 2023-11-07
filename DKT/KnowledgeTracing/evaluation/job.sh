@@ -5,9 +5,9 @@
 #SBATCH --mem-per-cpu=40G
 #SBATCH --tmp=4000                        # per node!!
 #SBATCH --gpus=rtx_3090:2
-#SBATCH --job-name=simple_job
-#SBATCH --output=./simple_job.out
-#SBATCH --error=./simple_job.err
+#SBATCH --job-name=sem1
+#SBATCH --output=./sem1.out
+#SBATCH --error=./sem1.err
 
 # run experiment
 python ./run.py

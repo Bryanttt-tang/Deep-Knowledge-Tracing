@@ -24,7 +24,7 @@ else:
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_step=10",
+    name="course_step=5",
 
 
     # config={
@@ -54,23 +54,17 @@ for epoch in range(C.EPOCH):
     val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
     if val_auc>best_auc:
         best_auc=val_auc
-        torch.save(model.state_dict(), 'best_df1.pth')
-    wandb.log({
-        "train_loss": train_loss
-        # "auc": val_auc,
-        # "epoch": epoch,
-        # "f1": val_f1,
-        # "recall": val_recall,
-        # "precision": val_precision
-    }, step = epoch)
+        torch.save(model.state_dict(), 'best_sem1.pth')
+    wandb.log({"train_loss": train_loss}, step = epoch)
     wandb.log({"train_auc": train_auc}, step = epoch)
-    wandb.log({"val_auc": val_auc}, step = epoch)
-    wandb.log({"train_f1": train_f1}, step=epoch)
-    wandb.log({"train_recall": train_recall}, step=epoch)
-    wandb.log({"train_precision": train_precision}, step=epoch)
-    
     wandb.log({"val_loss": val_loss}, step=epoch)
-    wandb.log({"val_f1": val_f1}, step=epoch)
-    wandb.log({"val_recall": val_recall}, step=epoch)
-    wandb.log({"val_precision": val_precision}, step=epoch)
+    wandb.log({"val_auc": val_auc}, step = epoch)
+    
+    # wandb.log({"train_f1": train_f1}, step=epoch)
+    # wandb.log({"train_recall": train_recall}, step=epoch)
+    # wandb.log({"train_precision": train_precision}, step=epoch)
+    
+    # wandb.log({"val_f1": val_f1}, step=epoch)
+    # wandb.log({"val_recall": val_recall}, step=epoch)
+    # wandb.log({"val_precision": val_precision}, step=epoch)
 wandb.finish()
