@@ -43,6 +43,7 @@ def train_epoch(model, trainLoader, optimizer, loss_func, device):
         batch = batch.to(device)
         #breakpoint()
         pred = model(batch)
+        #breakpoint()
         loss = loss_func(pred, batch)
         optimizer.zero_grad()
         loss.backward()

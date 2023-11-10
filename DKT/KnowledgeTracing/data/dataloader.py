@@ -57,9 +57,9 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/LON_course/course0.csv')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course4':
-        trainLoader = getTrainLoader(C.Dpath + '/LON_course/course4_train.csv')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_train.csv')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader(C.Dpath + '/LON_course/course4_test.csv')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_test.csv')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course27':
         trainLoader = getTrainLoader(C.Dpath + '/LON_course/course27.csv')

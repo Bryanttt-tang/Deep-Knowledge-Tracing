@@ -21,3 +21,4 @@ torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 202.00 MiB (G
 wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
 wandb: Network error (TransientError), entering retry loop.
 wandb: Network error (TransientError), entering retry loop.
+slurmstepd: error: *** JOB 34738022 ON eu-g4-029 CANCELLED AT 2023-11-07T16:46:27 ***

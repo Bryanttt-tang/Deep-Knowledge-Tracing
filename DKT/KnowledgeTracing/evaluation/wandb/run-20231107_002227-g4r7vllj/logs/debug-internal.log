@@ -14068,3 +14068,173 @@ wandb.sdk.lib.retry.TransientError: None
 2023-11-07 16:33:47,980 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
 2023-11-07 16:33:52,981 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
 2023-11-07 16:33:57,982 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:02,983 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:07,985 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:12,986 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:17,987 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:22,988 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:27,989 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:32,990 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:37,992 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:41,807 ERROR   wandb-upload_1:4525 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/109310165/630209850/102cc8ee8286496275f91b42827e86ae?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=E4T7LeUfWwqDrb%2BJKbqvCu1Uq5yc7ZnglNRJMJzPSViGS43OXRTI9%2BODrhHuGXg0VOZpTt6SLnqbdn8cTdCrFe3XYfvK1ubIBxr5msQMqMAn3tNP4fF8qhZ92C%2FvCGHDrBEiSCJBRWZyYzD22LN%2BL7kPlrhhf79qUYN1%2BADjyGvdmz8TcxA4LUqXw31V4mQ709ukVzdPq7pmOP4N0%2BG3uK%2BGNZKOeyIdzyFFakFVMKPFCHmVQp3YCN5BsEBO5eNN5QfphYWn%2F%2B9x7BAN5JhhjUj6nBaDBhCTaQ%2Fe0DUXsAV9d64fQM4xHpfaKnnzZReCn%2FvkodDf4t8DvaBqfpVLwQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/109310165/630209850/102cc8ee8286496275f91b42827e86ae?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=E4T7LeUfWwqDrb%2BJKbqvCu1Uq5yc7ZnglNRJMJzPSViGS43OXRTI9%2BODrhHuGXg0VOZpTt6SLnqbdn8cTdCrFe3XYfvK1ubIBxr5msQMqMAn3tNP4fF8qhZ92C%2FvCGHDrBEiSCJBRWZyYzD22LN%2BL7kPlrhhf79qUYN1%2BADjyGvdmz8TcxA4LUqXw31V4mQ709ukVzdPq7pmOP4N0%2BG3uK%2BGNZKOeyIdzyFFakFVMKPFCHmVQp3YCN5BsEBO5eNN5QfphYWn%2F%2B9x7BAN5JhhjUj6nBaDBhCTaQ%2Fe0DUXsAV9d64fQM4xHpfaKnnzZReCn%2FvkodDf4t8DvaBqfpVLwQ%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2adb2d846c10>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2023-11-07 16:34:41,808 ERROR   wandb-upload_1:4525 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'ECzI7oKGSWJ1+RtCgn6Grg==', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '1756'}
+2023-11-07 16:34:41,808 ERROR   wandb-upload_1:4525 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-11-07 16:34:42,993 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:47,994 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:52,995 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:34:57,996 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:02,997 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:07,998 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:12,999 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:18,000 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:23,001 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:28,002 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:28,066 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/bryant-ty/DKT-trial%201/g4r7vllj/wandb-metadata.json?Expires=1699399351&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jk20kZKwgj9rHuGxFsl7%2F2L4cbYotOzU56OB7kCFDD5UXnGH7p19hzKb4ee%2BvTejq7Z46FzI3UYcqDIqS54ObU%2BX2rX2Nmbfh2o2%2FJ37z5irHovox7NjGHooZKgYB03EHhAW%2Fl9RbbjL0HJn20yGwJw%2FcDsz3hNsoKpmAwAvtxSxPsMxi8XeAikk7vZ47PKqSXQW1j4FKz6%2FouRUd8TYdY1XkLaeGwLPW4n1YhepFK9ct5ieLLahEBCsB3gBfGy1yZ3x8OVJD5P2%2FhwhUBKTADH%2BLfHVbjUrEY4FTJIASVIgjYUUh96zRgUlDhipihhbor8V%2FOwI66BJ8EgRioZ%2BwQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/bryant-ty/DKT-trial%201/g4r7vllj/wandb-metadata.json?Expires=1699399351&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jk20kZKwgj9rHuGxFsl7%2F2L4cbYotOzU56OB7kCFDD5UXnGH7p19hzKb4ee%2BvTejq7Z46FzI3UYcqDIqS54ObU%2BX2rX2Nmbfh2o2%2FJ37z5irHovox7NjGHooZKgYB03EHhAW%2Fl9RbbjL0HJn20yGwJw%2FcDsz3hNsoKpmAwAvtxSxPsMxi8XeAikk7vZ47PKqSXQW1j4FKz6%2FouRUd8TYdY1XkLaeGwLPW4n1YhepFK9ct5ieLLahEBCsB3gBfGy1yZ3x8OVJD5P2%2FhwhUBKTADH%2BLfHVbjUrEY4FTJIASVIgjYUUh96zRgUlDhipihhbor8V%2FOwI66BJ8EgRioZ%2BwQ%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2adb2d84c6a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2023-11-07 16:35:28,066 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '14912'}
+2023-11-07 16:35:28,066 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-11-07 16:35:33,004 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:38,005 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:40,284 ERROR   wandb-upload_2:4525 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/109310165/630209850/f697aa2e616bc52f9639a181fccf468f?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=tLAqajpN26SYCKVDtpubrfcHmKgduKXmGSbTopoMMlUekh3fkrtW6F6lkcGTp1AnCRoWAeiEU7rA669Sg4yw3eS6y455lWmKOlinbE%2FMmgUX8QRmzdZfmxksd0joGxDx749SNzAMkHOsaY4p0U0RwwEv0QcNglgAT8QXUHxKaM%2FmsgPqbY94IOmzuD%2FMDJcgGJnTbl51K%2B9sR08apfeXvl1%2F0dR3MRRLshju8EzQj1VWy%2FVyAhvkGRHHxWpdGbhPNqZ7CK2JCoSVUsUis4lVkk2OtUyZ2EnBqQNydB0vA%2BnpCeSAWClmYGbqTgDJuCtSizQFc1wkUugPSKtmDSyEUA%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/109310165/630209850/f697aa2e616bc52f9639a181fccf468f?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=tLAqajpN26SYCKVDtpubrfcHmKgduKXmGSbTopoMMlUekh3fkrtW6F6lkcGTp1AnCRoWAeiEU7rA669Sg4yw3eS6y455lWmKOlinbE%2FMmgUX8QRmzdZfmxksd0joGxDx749SNzAMkHOsaY4p0U0RwwEv0QcNglgAT8QXUHxKaM%2FmsgPqbY94IOmzuD%2FMDJcgGJnTbl51K%2B9sR08apfeXvl1%2F0dR3MRRLshju8EzQj1VWy%2FVyAhvkGRHHxWpdGbhPNqZ7CK2JCoSVUsUis4lVkk2OtUyZ2EnBqQNydB0vA%2BnpCeSAWClmYGbqTgDJuCtSizQFc1wkUugPSKtmDSyEUA%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2adb2d846460>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2023-11-07 16:35:40,284 ERROR   wandb-upload_2:4525 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': '9peqLmFrxS+WOaGB/M9Gjw==', 'Content-Type': 'application/json', 'Content-Length': '648'}
+2023-11-07 16:35:40,284 ERROR   wandb-upload_2:4525 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-11-07 16:35:43,006 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:48,007 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:53,008 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:35:58,009 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:03,010 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:08,011 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:13,012 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:18,013 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:23,015 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:28,016 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:33,017 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:38,018 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:43,019 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:48,020 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:53,021 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:36:58,023 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:03,024 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:08,025 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:13,026 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:18,027 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:23,028 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:28,030 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:33,031 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:38,032 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:43,034 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:48,035 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:53,036 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:37:58,038 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:03,039 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:08,040 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:13,042 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:18,043 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:23,044 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:28,045 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:33,046 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:38,048 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:43,049 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:48,050 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:53,051 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:38:58,052 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:03,053 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:08,054 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:13,055 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:18,056 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:23,057 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:28,059 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:33,060 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:38,061 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:43,062 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:48,063 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:53,064 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:39:58,065 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:03,066 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:08,067 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:13,068 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:18,070 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:23,071 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:28,072 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:33,073 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:38,074 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:39,606 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/bryant-ty/DKT-trial%201/g4r7vllj/wandb-metadata.json?Expires=1699399351&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jk20kZKwgj9rHuGxFsl7%2F2L4cbYotOzU56OB7kCFDD5UXnGH7p19hzKb4ee%2BvTejq7Z46FzI3UYcqDIqS54ObU%2BX2rX2Nmbfh2o2%2FJ37z5irHovox7NjGHooZKgYB03EHhAW%2Fl9RbbjL0HJn20yGwJw%2FcDsz3hNsoKpmAwAvtxSxPsMxi8XeAikk7vZ47PKqSXQW1j4FKz6%2FouRUd8TYdY1XkLaeGwLPW4n1YhepFK9ct5ieLLahEBCsB3gBfGy1yZ3x8OVJD5P2%2FhwhUBKTADH%2BLfHVbjUrEY4FTJIASVIgjYUUh96zRgUlDhipihhbor8V%2FOwI66BJ8EgRioZ%2BwQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/bryant-ty/DKT-trial%201/g4r7vllj/wandb-metadata.json?Expires=1699399351&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jk20kZKwgj9rHuGxFsl7%2F2L4cbYotOzU56OB7kCFDD5UXnGH7p19hzKb4ee%2BvTejq7Z46FzI3UYcqDIqS54ObU%2BX2rX2Nmbfh2o2%2FJ37z5irHovox7NjGHooZKgYB03EHhAW%2Fl9RbbjL0HJn20yGwJw%2FcDsz3hNsoKpmAwAvtxSxPsMxi8XeAikk7vZ47PKqSXQW1j4FKz6%2FouRUd8TYdY1XkLaeGwLPW4n1YhepFK9ct5ieLLahEBCsB3gBfGy1yZ3x8OVJD5P2%2FhwhUBKTADH%2BLfHVbjUrEY4FTJIASVIgjYUUh96zRgUlDhipihhbor8V%2FOwI66BJ8EgRioZ%2BwQ%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2adb2d856c40>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2023-11-07 16:40:39,606 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '14912'}
+2023-11-07 16:40:39,606 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-11-07 16:40:40,798 ERROR   wandb-upload_1:4525 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/109310165/630209850/102cc8ee8286496275f91b42827e86ae?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=E4T7LeUfWwqDrb%2BJKbqvCu1Uq5yc7ZnglNRJMJzPSViGS43OXRTI9%2BODrhHuGXg0VOZpTt6SLnqbdn8cTdCrFe3XYfvK1ubIBxr5msQMqMAn3tNP4fF8qhZ92C%2FvCGHDrBEiSCJBRWZyYzD22LN%2BL7kPlrhhf79qUYN1%2BADjyGvdmz8TcxA4LUqXw31V4mQ709ukVzdPq7pmOP4N0%2BG3uK%2BGNZKOeyIdzyFFakFVMKPFCHmVQp3YCN5BsEBO5eNN5QfphYWn%2F%2B9x7BAN5JhhjUj6nBaDBhCTaQ%2Fe0DUXsAV9d64fQM4xHpfaKnnzZReCn%2FvkodDf4t8DvaBqfpVLwQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/109310165/630209850/102cc8ee8286496275f91b42827e86ae?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=E4T7LeUfWwqDrb%2BJKbqvCu1Uq5yc7ZnglNRJMJzPSViGS43OXRTI9%2BODrhHuGXg0VOZpTt6SLnqbdn8cTdCrFe3XYfvK1ubIBxr5msQMqMAn3tNP4fF8qhZ92C%2FvCGHDrBEiSCJBRWZyYzD22LN%2BL7kPlrhhf79qUYN1%2BADjyGvdmz8TcxA4LUqXw31V4mQ709ukVzdPq7pmOP4N0%2BG3uK%2BGNZKOeyIdzyFFakFVMKPFCHmVQp3YCN5BsEBO5eNN5QfphYWn%2F%2B9x7BAN5JhhjUj6nBaDBhCTaQ%2Fe0DUXsAV9d64fQM4xHpfaKnnzZReCn%2FvkodDf4t8DvaBqfpVLwQ%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2adb2d84a9d0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2023-11-07 16:40:40,799 ERROR   wandb-upload_1:4525 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': 'ECzI7oKGSWJ1+RtCgn6Grg==', 'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '1756'}
+2023-11-07 16:40:40,799 ERROR   wandb-upload_1:4525 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-11-07 16:40:43,075 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:48,076 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:53,077 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:40:58,078 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:03,079 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:08,080 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:13,081 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:18,082 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:23,084 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:24,554 ERROR   wandb-upload_2:4525 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-artifacts-prod/wandb_artifacts/109310165/630209850/f697aa2e616bc52f9639a181fccf468f?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=tLAqajpN26SYCKVDtpubrfcHmKgduKXmGSbTopoMMlUekh3fkrtW6F6lkcGTp1AnCRoWAeiEU7rA669Sg4yw3eS6y455lWmKOlinbE%2FMmgUX8QRmzdZfmxksd0joGxDx749SNzAMkHOsaY4p0U0RwwEv0QcNglgAT8QXUHxKaM%2FmsgPqbY94IOmzuD%2FMDJcgGJnTbl51K%2B9sR08apfeXvl1%2F0dR3MRRLshju8EzQj1VWy%2FVyAhvkGRHHxWpdGbhPNqZ7CK2JCoSVUsUis4lVkk2OtUyZ2EnBqQNydB0vA%2BnpCeSAWClmYGbqTgDJuCtSizQFc1wkUugPSKtmDSyEUA%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-artifacts-prod/wandb_artifacts/109310165/630209850/f697aa2e616bc52f9639a181fccf468f?Expires=1699400928&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=tLAqajpN26SYCKVDtpubrfcHmKgduKXmGSbTopoMMlUekh3fkrtW6F6lkcGTp1AnCRoWAeiEU7rA669Sg4yw3eS6y455lWmKOlinbE%2FMmgUX8QRmzdZfmxksd0joGxDx749SNzAMkHOsaY4p0U0RwwEv0QcNglgAT8QXUHxKaM%2FmsgPqbY94IOmzuD%2FMDJcgGJnTbl51K%2B9sR08apfeXvl1%2F0dR3MRRLshju8EzQj1VWy%2FVyAhvkGRHHxWpdGbhPNqZ7CK2JCoSVUsUis4lVkk2OtUyZ2EnBqQNydB0vA%2BnpCeSAWClmYGbqTgDJuCtSizQFc1wkUugPSKtmDSyEUA%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2adb2d83f580>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2023-11-07 16:41:24,554 ERROR   wandb-upload_2:4525 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-MD5': '9peqLmFrxS+WOaGB/M9Gjw==', 'Content-Type': 'application/json', 'Content-Length': '648'}
+2023-11-07 16:41:24,554 ERROR   wandb-upload_2:4525 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-11-07 16:41:28,085 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:33,086 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:38,087 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:43,088 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:48,089 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:53,091 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:41:58,092 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:03,093 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:08,094 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:13,095 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:18,097 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:23,098 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:28,099 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:33,100 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:38,101 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:43,102 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:48,103 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:53,105 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:42:58,106 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:03,107 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:08,108 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:13,109 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:18,110 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:23,111 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:28,112 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:33,113 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:38,115 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:43,116 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:48,117 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:53,118 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:43:58,119 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:03,120 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:08,121 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:13,122 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:18,123 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:23,125 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:28,126 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:33,127 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:38,128 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:43,129 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:48,130 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:53,131 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:44:58,132 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:03,133 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:08,135 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:13,136 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:18,137 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:23,138 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:28,139 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:33,140 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:38,141 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:43,142 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:48,144 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:53,145 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:45:58,146 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:46:02,643 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2556] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/bryant-ty/DKT-trial%201/g4r7vllj/wandb-metadata.json?Expires=1699399351&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jk20kZKwgj9rHuGxFsl7%2F2L4cbYotOzU56OB7kCFDD5UXnGH7p19hzKb4ee%2BvTejq7Z46FzI3UYcqDIqS54ObU%2BX2rX2Nmbfh2o2%2FJ37z5irHovox7NjGHooZKgYB03EHhAW%2Fl9RbbjL0HJn20yGwJw%2FcDsz3hNsoKpmAwAvtxSxPsMxi8XeAikk7vZ47PKqSXQW1j4FKz6%2FouRUd8TYdY1XkLaeGwLPW4n1YhepFK9ct5ieLLahEBCsB3gBfGy1yZ3x8OVJD5P2%2FhwhUBKTADH%2BLfHVbjUrEY4FTJIASVIgjYUUh96zRgUlDhipihhbor8V%2FOwI66BJ8EgRioZ%2BwQ%3D%3D: HTTPSConnectionPool(host='storage.googleapis.com', port=443): Max retries exceeded with url: /wandb-production.appspot.com/bryant-ty/DKT-trial%201/g4r7vllj/wandb-metadata.json?Expires=1699399351&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jk20kZKwgj9rHuGxFsl7%2F2L4cbYotOzU56OB7kCFDD5UXnGH7p19hzKb4ee%2BvTejq7Z46FzI3UYcqDIqS54ObU%2BX2rX2Nmbfh2o2%2FJ37z5irHovox7NjGHooZKgYB03EHhAW%2Fl9RbbjL0HJn20yGwJw%2FcDsz3hNsoKpmAwAvtxSxPsMxi8XeAikk7vZ47PKqSXQW1j4FKz6%2FouRUd8TYdY1XkLaeGwLPW4n1YhepFK9ct5ieLLahEBCsB3gBfGy1yZ3x8OVJD5P2%2FhwhUBKTADH%2BLfHVbjUrEY4FTJIASVIgjYUUh96zRgUlDhipihhbor8V%2FOwI66BJ8EgRioZ%2BwQ%3D%3D (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x2adb2d83f160>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2023-11-07 16:46:02,643 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2558] upload_file request headers: {'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '14912'}
+2023-11-07 16:46:02,643 ERROR   wandb-upload_0:4525 [internal_api.py:upload_file():2560] upload_file response body: 
+2023-11-07 16:46:03,147 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:46:08,148 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:46:13,149 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:46:18,150 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
+2023-11-07 16:46:23,151 DEBUG   HandlerThread:4525 [handler.py:handle_request():146] handle_request: keepalive
