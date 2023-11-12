@@ -24,14 +24,8 @@ else:
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_step=250,LSTM",
+    name="df1_50,h*2",
 
-
-    # config={
-    #     "learning_rate": 0.001,
-    #     "architecture": "CNN",
-    #     "dataset": "CIFAR-10"
-    # }
 )
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
@@ -54,10 +48,10 @@ for epoch in range(C.EPOCH):
     val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
     if val_auc>best_auc:
         best_auc=val_auc
-        torch.save(model.state_dict(), 'df1_step=250.pth')
+        torch.save(model.state_dict(), 'df1_50,h*2.pth')
     wandb.log({"train_loss": train_loss}, step = epoch)
-    wandb.log({"train_auc": train_auc}, step = epoch)
     wandb.log({"val_loss": val_loss}, step=epoch)
+    wandb.log({"train_auc": train_auc}, step = epoch)
     wandb.log({"val_auc": val_auc}, step = epoch)
     
     # wandb.log({"train_f1": train_f1}, step=epoch)
