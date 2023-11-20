@@ -24,7 +24,7 @@ else:
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_50,h*2",
+    name="df1_step=50,h*2",
 
 )
 
@@ -43,12 +43,13 @@ best_auc=0
 for epoch in range(C.EPOCH):
     print('epoch: ' + str(epoch))
     model, optimizer, train_loss = eval.train(trainLoaders, model, optimizer_adgd, loss_func,device)
+    # model = model.half()
     # torch.save(model, f"epoch_{epoch}.pt")
     train_auc, train_f1, train_recall, train_precision,val_loss=eval.test(trainLoaders, model,loss_func, device)
     val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
     if val_auc>best_auc:
         best_auc=val_auc
-        torch.save(model.state_dict(), 'df1_50,h*2.pth')
+        torch.save(model.state_dict(), 'df1_step=50,h*2.pth')
     wandb.log({"train_loss": train_loss}, step = epoch)
     wandb.log({"val_loss": val_loss}, step=epoch)
     wandb.log({"train_auc": train_auc}, step = epoch)
