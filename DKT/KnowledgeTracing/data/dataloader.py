@@ -42,9 +42,9 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/statics2011/statics2011_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'kddcup2010':
-        trainLoader = getTrainLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch/DKT/KTDataset/kddcup2010/kddcup2010_train.txt')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/kddcup2010/kdd_small_train.csv')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch/DKT/KTDataset/kddcup2010/kddcup2010_test.txt')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/kddcup2010/kddcup2010_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'assist2017':
         trainLoader = getTrainLoader(C.Dpath + '/assist2017/assist2017_train.txt')
@@ -77,10 +77,15 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/LON_course/combined_course_test.csv')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course_comb_df1':
-        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_new_train.csv')
+        # trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_new_train.csv')
+        # trainLoaders.append(trainLoader)
+        # testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_new_test.csv')
+        # testLoaders.append(testLoader)
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_reverse_train.csv')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_new_test.csv')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_reverse_test.csv')
         testLoaders.append(testLoader)
+        
     elif dataset == 'LON_sem1':
         trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/sem1_new_train.csv')
         trainLoaders.append(trainLoader)
