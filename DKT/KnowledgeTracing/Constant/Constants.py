@@ -33,23 +33,23 @@ numbers = {
     'LON_course27' : 193,
     'LON_course_total' : 2796,
     'LON_course_combined' : 772,
-    'LON_course_comb_df1' : 493,
+    'LON_course_comb_df1' : 720,
     'LON_sem1' : 1029,
     'synthetic' : 50
 }
 
-DATASET = datasets['kddcup2010']
-NUM_OF_QUESTIONS = numbers['kddcup2010']
+DATASET = datasets['LON_course_comb_df1']
+NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
 MAX_STEP = 50 # the sequence length of RNN model
 BATCH_SIZE = 64
 LR = 0.002
-EPOCH = 300
+EPOCH = 200
 #input dimension
 INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension
 EMBED = NUM_OF_QUESTIONS
 # hidden layer dimension
-HIDDEN = 300
+HIDDEN = 400
 # nums of hidden layers
 LAYERS = 1
 # output dimension
