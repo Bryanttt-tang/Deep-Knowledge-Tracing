@@ -77,7 +77,7 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/LON_course/combined_course_test.csv')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course_comb_df1':
-        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_train_small.csv')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_new_train.csv')
         trainLoaders.append(trainLoader)
         testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/df1_new_test.csv')
         testLoaders.append(testLoader)
