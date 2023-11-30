@@ -29,7 +29,7 @@ numbers = {
     'static2011' : 1224, 
     'kddcup2010' : 661,
     'LON_course0' : 214,
-    'LON_course4' : 161,
+    'LON_course4' : 227,
     'LON_course27' : 193,
     'LON_course_total' : 2796,
     'LON_course_combined' : 772,
@@ -49,7 +49,7 @@ INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension
 EMBED = NUM_OF_QUESTIONS
 # hidden layer dimension
-HIDDEN = 600
+HIDDEN = 400
 # nums of hidden layers
 LAYERS = 1
 # output dimension

@@ -24,6 +24,7 @@ def performance(ground_truth, prediction):
 
     print('auc:' + str(auc) + ' f1: ' + str(f1) + ' recall: ' + str(recall) + ' precision: ' + str(precision) + '\n')
     return auc, f1, recall, precision
+
 class lossFunc(nn.Module):
     def __init__(self):
         super(lossFunc, self).__init__()

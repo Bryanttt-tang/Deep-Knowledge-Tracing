@@ -611,3 +611,4 @@ wandb: Network error (TransientError), entering retry loop.
 wandb: Waiting for W&B process to finish... (success).
 wandb: Network error (TransientError), entering retry loop.
 wandb: Network error (TransientError), entering retry loop.
+slurmstepd: error: *** JOB 37445292 ON eu-g4-008 CANCELLED AT 2023-11-30T11:05:09 ***
