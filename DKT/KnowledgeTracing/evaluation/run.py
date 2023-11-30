@@ -25,14 +25,14 @@ else:
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_LSTM",
+    name="df1_3h",
 
 )
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
-# model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
-model = LGR(C.INPUT, C.OUTPUT).to(device)
+model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
+# model = LGR(C.INPUT, C.OUTPUT).to(device)
 optimizer_adam = optim.Adam(model.parameters(), lr=C.LR)
 optimizer_adgd = optim.Adagrad(model.parameters(),lr=C.LR)
 # optimizer_adgd.state = {key: value.to(device) for key, value in optimizer_adgd.state.items()}
@@ -50,7 +50,7 @@ for epoch in range(C.EPOCH):
     val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
     if val_auc>best_auc:
         best_auc=val_auc
-        torch.save(model.state_dict(), 'df1_LSTM.pth')
+        torch.save(model.state_dict(), 'df1_3h.pth')
     wandb.log({"train_loss": train_loss}, step = epoch)
     wandb.log({"val_loss": val_loss}, step=epoch)
     wandb.log({"train_auc": train_auc}, step = epoch)

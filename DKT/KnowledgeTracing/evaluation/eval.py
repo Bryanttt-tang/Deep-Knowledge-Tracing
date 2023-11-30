@@ -72,7 +72,7 @@ def test_epoch(model, testLoader, loss_func, device):
         pred = model(batch)# output: torch.size([batch_size, sequence_length, n_questions])
         loss = loss_func(pred, batch)
         tot_loss += loss.item()
-        # data = batch # batch input: torch.size([batch_size,max_step,2*n_questions])
+        # data = batch # batch input: torch.size([batch_size, sequence_length, 2*n_questions])
         # print(data)
         # breakpoint()
         for student in range(pred.shape[0]):

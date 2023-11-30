@@ -49,7 +49,7 @@ INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension
 EMBED = NUM_OF_QUESTIONS
 # hidden layer dimension
-HIDDEN = 400
+HIDDEN = 600
 # nums of hidden layers
 LAYERS = 1
 # output dimension
