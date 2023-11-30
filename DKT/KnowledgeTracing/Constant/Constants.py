@@ -38,8 +38,8 @@ numbers = {
     'synthetic' : 50
 }
 
-DATASET = datasets['LON_course_comb_df1']
-NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
+DATASET = datasets['synthetic']
+NUM_OF_QUESTIONS = numbers['synthetic']
 MAX_STEP = 50 # the sequence length of RNN model
 BATCH_SIZE = 64
 LR = 0.002
@@ -49,7 +49,7 @@ INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension
 EMBED = NUM_OF_QUESTIONS
 # hidden layer dimension
-HIDDEN = 600
+HIDDEN = 400
 # nums of hidden layers
 LAYERS = 1
 # output dimension
