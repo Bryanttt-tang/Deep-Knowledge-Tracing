@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.8",
+    "heartbeatAt": "2023-11-29T16:30:49.498435",
+    "startedAt": "2023-11-29T16:30:48.280934",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "d:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch/DKT/KnowledgeTracing/evaluation/run.py",
+    "codePathLocal": "DKT\\KnowledgeTracing\\evaluation\\run.py",
+    "codePath": "DKT\\KnowledgeTracing\\evaluation\\run.py",
+    "git": {
+        "remote": "https://github.com/Bryanttt-tang/Deep-Knowledge-Tracing.git",
+        "commit": "fc35e9d67ef711cf8e48c86f6b270c5f9ad326c9"
+    },
+    "email": "tangyu990628@gmail.com",
+    "root": "D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/DeepKnowledgeTracing-DKT-Pytorch",
+    "host": "LAPTOP-HVTN1FK1",
+    "username": "tyu06",
+    "executable": "C:\\Users\\tyu06\\anaconda3\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2000.0,
+        "min": 0.0,
+        "max": 2301.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.0,
+            "min": 0.0,
+            "max": 2301.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 433.9125785827637,
+            "used": 303.7560234069824
+        }
+    },
+    "gpu": "GeForce MX350",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "GeForce MX350",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 15.870410919189453
+    }
+}
