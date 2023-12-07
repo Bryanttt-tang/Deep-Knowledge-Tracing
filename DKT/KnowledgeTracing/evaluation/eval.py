@@ -15,12 +15,12 @@ def performance(ground_truth, prediction):
     # f1 = metrics.f1_score(ground_truth.detach().cpu().numpy(), torch.round(prediction).detach().cpu().numpy())
     # recall = metrics.recall_score(ground_truth.detach().cpu().numpy(), torch.round(prediction).detach().cpu().numpy())
     # precision = metrics.precision_score(ground_truth.detach().cpu().numpy(), torch.round(prediction).detach().cpu().numpy())
-    fpr, tpr, thresholds = metrics.roc_curve(ground_truth, prediction)
+    fpr, tpr, thresholds = metrics.roc_curve(ground_truth.numpy(), prediction.numpy())
     auc = metrics.auc(fpr, tpr)
 
-    f1 = metrics.f1_score(ground_truth, np.round(prediction))
-    recall = metrics.recall_score(ground_truth, np.round(prediction))
-    precision = metrics.precision_score(ground_truth, np.round(prediction))
+    f1 = metrics.f1_score(ground_truth.numpy(), torch.round(prediction).numpy())
+    recall = metrics.recall_score(ground_truth.numpy(), torch.round(prediction).numpy())
+    precision = metrics.precision_score(ground_truth.numpy(), torch.round(prediction).numpy())
 
     print('auc:' + str(auc) + ' f1: ' + str(f1) + ' recall: ' + str(recall) + ' precision: ' + str(precision) + '\n')
     return auc, f1, recall, precision
@@ -107,8 +107,10 @@ def test(testLoaders, model,loss_func,device):
     val_loss=0
     for i in range(len(testLoaders)):
         pred_epoch, gold_epoch, val_loss = test_epoch(model, testLoaders[i],loss_func,device)
-        prediction = torch.cat([prediction, pred_epoch]).detach().cpu().numpy()  # torch size([39200])
-        ground_truth = torch.cat([ground_truth, gold_epoch]).detach().cpu().numpy()
-        #breakpoint()
+        pred_epoch=pred_epoch.detach().cpu()
+        gold_epoch=gold_epoch.detach().cpu()
+        prediction = torch.cat([prediction, pred_epoch]).to(torch.device('cpu'))  # torch size([39200])
+        ground_truth = torch.cat([ground_truth, gold_epoch]).to(torch.device('cpu'))
+
     auc, f1, recall, precision=performance(ground_truth, prediction)
     return auc, f1, recall, precision, val_loss
