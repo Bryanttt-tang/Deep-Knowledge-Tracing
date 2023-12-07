@@ -27,14 +27,14 @@ def getLoader(dataset):
     trainLoaders = []
     testLoaders = []
     if dataset == 'assist2009':
-        trainLoader = getTrainLoader(C.Dpath + '/assist2009/builder_train.csv')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/assist2009/builder_train.csv')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader(C.Dpath + '/assist2009/builder_test.csv')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/assist2009/builder_test.csv')
         testLoaders.append(testLoader)
     elif dataset == 'assist2015':
-        trainLoader = getTrainLoader(C.Dpath + '/assist2015/assist2015_train.txt')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/assist2015/assist2015_train.txt')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader(C.Dpath + '/assist2015/assist2015_test.txt')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/assist2015/assist2015_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'static2011':
         trainLoader = getTrainLoader(C.Dpath + '/statics2011/statics2011_train.txt')
@@ -42,14 +42,14 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/statics2011/statics2011_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'kddcup2010':
-        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/kddcup2010/kdd_small_train.csv')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/kddcup2010/kddcup2010_train.txt')
         trainLoaders.append(trainLoader)
         testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/kddcup2010/kddcup2010_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'assist2017':
-        trainLoader = getTrainLoader(C.Dpath + '/assist2017/assist2017_train.txt')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/assist2017/assist2017_train.txt')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader(C.Dpath + '/assist2017/assist2017_test.txt')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/assist2017/assist2017_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course0':
         trainLoader = getTrainLoader(C.Dpath + '/LON_course/course0.csv')
