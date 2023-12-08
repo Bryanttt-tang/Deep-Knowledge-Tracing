@@ -102,15 +102,15 @@ def train(trainLoaders, model, optimizer, lossFunc,device):
     return model, optimizer, train_loss
 
 def test(testLoaders, model,loss_func,device):
-    ground_truth = torch.Tensor([]).to(device)
-    prediction = torch.Tensor([]).to(device)
+    ground_truth = torch.Tensor([])
+    prediction = torch.Tensor([])
     val_loss=0
     for i in range(len(testLoaders)):
         pred_epoch, gold_epoch, val_loss = test_epoch(model, testLoaders[i],loss_func,device)
         pred_epoch=pred_epoch.detach().cpu()
         gold_epoch=gold_epoch.detach().cpu()
-        prediction = torch.cat([prediction, pred_epoch]).to(torch.device('cpu'))  # torch size([39200])
-        ground_truth = torch.cat([ground_truth, gold_epoch]).to(torch.device('cpu'))
-
+        prediction = torch.cat([prediction, pred_epoch]) # torch size([39200])
+        ground_truth = torch.cat([ground_truth, gold_epoch])
+        breakpoint()
     auc, f1, recall, precision=performance(ground_truth, prediction)
     return auc, f1, recall, precision, val_loss
