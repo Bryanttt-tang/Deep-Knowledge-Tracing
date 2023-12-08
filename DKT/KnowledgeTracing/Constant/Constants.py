@@ -34,13 +34,13 @@ numbers = {
     'LON_course_total' : 2796,
     'LON_course_combined' : 772,
     'LON_course_comb_df1' : 720,
-    'LON_sem1' : 1029,
+    'LON_sem1' : 1444,
     'synthetic' : 50
 }
 
-DATASET = datasets['synthetic']
-NUM_OF_QUESTIONS = numbers['synthetic']
-MAX_STEP = 50 # the sequence length of RNN model
+DATASET = datasets['LON_course_comb_df1']
+NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
+MAX_STEP = 100 # the sequence length of RNN model
 BATCH_SIZE = 64
 LR = 0.002
 EPOCH = 150
@@ -51,6 +51,6 @@ EMBED = NUM_OF_QUESTIONS
 # hidden layer dimension
 HIDDEN = 200
 # nums of hidden layers
-LAYERS =1
+LAYERS =3
 # output dimension
 OUTPUT = NUM_OF_QUESTIONS

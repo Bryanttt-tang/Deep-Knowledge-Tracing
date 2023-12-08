@@ -111,6 +111,5 @@ def test(testLoaders, model,loss_func,device):
         gold_epoch=gold_epoch.detach().cpu()
         prediction = torch.cat([prediction, pred_epoch]) # torch size([39200])
         ground_truth = torch.cat([ground_truth, gold_epoch])
-        breakpoint()
     auc, f1, recall, precision=performance(ground_truth, prediction)
     return auc, f1, recall, precision, val_loss

@@ -5,9 +5,9 @@
 #SBATCH --mem-per-cpu=40G
 #SBATCH --tmp=4000                        # per node!!
 #SBATCH --gpus=v100:1
-#SBATCH --job-name=df1_deep2_lstm
-#SBATCH --output=./df1_deep2_lstm.out
-#SBATCH --error=./df1_deep2_lstm.err
+#SBATCH --job-name=df1_deep3_lstm
+#SBATCH --output=./df1_deep3_lstm.out
+#SBATCH --error=./df1_deep3_lstm.err
 
 # run experiment
 python ./run.py

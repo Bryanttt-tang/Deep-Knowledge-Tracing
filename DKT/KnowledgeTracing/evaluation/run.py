@@ -23,11 +23,11 @@ else:
     device = torch.device('cpu')
 # device = torch.device('cpu')
 # Initialize Weights and Biases with your API key and project name
-# wandb.init(
-#     project="DKT-trial 1",
-#     name="df1_deep2_lstm",
+wandb.init(
+    project="DKT-trial 1",
+    name="df1_deep3_lstm",
 
-# )
+)
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
@@ -52,10 +52,10 @@ for epoch in range(C.EPOCH):
     # if val_auc>best_auc:
     #     best_auc=val_auc
     #     torch.save(model.state_dict(), 'df1_deep.pth')
-    # wandb.log({"train_loss": train_loss}, step = epoch)
-    # wandb.log({"val_loss": val_loss}, step=epoch)
-    # wandb.log({"train_auc": train_auc}, step = epoch)
-    # wandb.log({"val_auc": val_auc}, step = epoch)
+    wandb.log({"train_loss": train_loss}, step = epoch)
+    wandb.log({"val_loss": val_loss}, step=epoch)
+    wandb.log({"train_auc": train_auc}, step = epoch)
+    wandb.log({"val_auc": val_auc}, step = epoch)
     
 #     # wandb.log({"train_f1": train_f1}, step=epoch)
 #     # wandb.log({"train_recall": train_recall}, step=epoch)
@@ -64,4 +64,4 @@ for epoch in range(C.EPOCH):
 #     # wandb.log({"val_f1": val_f1}, step=epoch)
 #     # wandb.log({"val_recall": val_recall}, step=epoch)
 #     # wandb.log({"val_precision": val_precision}, step=epoch)
-# wandb.finish()
+wandb.finish()
