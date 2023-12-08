@@ -1,0 +1,22 @@
+wandb: Currently logged in as: bryanttang-ethz (bryant-tang-ethz). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231208_202057-c30p1g8z
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run sem1_dkt
+wandb: ⭐️ View project at https://wandb.ai/bryant-tang-ethz/DKT-trial%201
+wandb: 🚀 View run at https://wandb.ai/bryant-tang-ethz/DKT-trial%201/runs/c30p1g8z
+wandb: Network error (TransientError), entering retry loop.
+loading train data:    : 0it [00:00, ?it/s]loading train data:    : 1227it [00:02, 612.88it/s]loading train data:    : 1553it [00:03, 494.61it/s]
+Traceback (most recent call last):
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/./run.py", line 42, in <module>
+    trainLoaders, testLoaders = getLoader(C.DATASET)
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/data/dataloader.py", line 86, in getLoader
+    trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/sem1_train.csv')
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/data/dataloader.py", line 14, in getTrainLoader
+    trainques, trainans = handle.getTrainData() # size: trainqus.reshape([-1, self.maxstep])
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/data/readdata.py", line 17, in getTrainData
+    length = int(length.strip().strip(',')) # total learning trajectory of individual student
+ValueError: invalid literal for int() with base 10: '0,1,0,1,1,0,0,0,1,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,0,1,1,0,0,0,0,1
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Network error (TransientError), entering retry loop.
+wandb: Network error (TransientError), entering retry loop.

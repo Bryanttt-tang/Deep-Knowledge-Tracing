@@ -25,14 +25,14 @@ else:
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_deep3_lstm",
+    name="sem1_lgr",
 
 )
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
-model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
-# model = LGR(C.INPUT, C.HIDDEN, C.OUTPUT).to(device)
+# model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
+model = LGR(C.INPUT, C.HIDDEN, C.OUTPUT).to(device)
 
 optimizer_adam = optim.Adam(model.parameters(), lr=C.LR)
 optimizer_adgd = optim.Adagrad(model.parameters(),lr=C.LR)

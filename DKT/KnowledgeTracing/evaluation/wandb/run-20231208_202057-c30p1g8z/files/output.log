@@ -1,0 +1,13 @@
+
+Dataset: LON_sem1, Learning Rate: 0.002
+loading train data:    : 1553it [00:03, 494.61it/s]
+Traceback (most recent call last):
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/./run.py", line 42, in <module>
+    trainLoaders, testLoaders = getLoader(C.DATASET)
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/data/dataloader.py", line 86, in getLoader
+    trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/sem1_train.csv')
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/data/dataloader.py", line 14, in getTrainLoader
+    trainques, trainans = handle.getTrainData() # size: trainqus.reshape([-1, self.maxstep])
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/data/readdata.py", line 17, in getTrainData
+    length = int(length.strip().strip(',')) # total learning trajectory of individual student
+ValueError: invalid literal for int() with base 10: '0,1,0,1,1,0,0,0,1,0,0,1,1,0,0,0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,1,1,1,0,1,0,1,0,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,1,1,0,1,1,0,1,1,0,0,0,0,1
