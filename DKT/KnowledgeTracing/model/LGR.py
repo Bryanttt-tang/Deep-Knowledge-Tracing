@@ -16,13 +16,22 @@ class LGR(nn.Module):
         self.output_layer = nn.Linear(hidden_dim, output_dim)
         self.sigmoid = nn.Sigmoid()
 
+    # def forward(self, x):
+    #     # h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim)).to(x.device)
+    #     # out,hn = self.rnn(x, h0)
+    #     hidden = self.tanh(self.hidden_layer(x))
+        
+    #     # Apply sigmoid activation for binary classification
+    #     res = self.sigmoid(self.output_layer(hidden))
+        
+    #     return res
+
     def forward(self, x):
         # h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim)).to(x.device)
         # out,hn = self.rnn(x, h0)
-        hidden = self.tanh(self.hidden_layer(x))
+        hidden = self.hidden_layer(x)
         
         # Apply sigmoid activation for binary classification
         res = self.sigmoid(self.output_layer(hidden))
         
         return res
-

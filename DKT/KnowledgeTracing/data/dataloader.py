@@ -83,7 +83,7 @@ def getLoader(dataset):
         testLoaders.append(testLoader)
         
     elif dataset == 'LON_sem1':
-        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/sem1_train.csv')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/sem1_train_small.csv')
         trainLoaders.append(trainLoader)
         testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/sem1_test.csv')
         testLoaders.append(testLoader)

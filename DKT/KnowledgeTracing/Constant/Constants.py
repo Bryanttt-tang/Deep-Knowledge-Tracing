@@ -38,12 +38,12 @@ numbers = {
     'synthetic' : 50
 }
 
-DATASET = datasets['LON_sem1']
-NUM_OF_QUESTIONS = numbers['LON_sem1']
+DATASET = datasets['assist2017']
+NUM_OF_QUESTIONS = numbers['assist2017']
 MAX_STEP = 50 # the sequence length of RNN model
 BATCH_SIZE = 64
 LR = 0.002
-EPOCH = 200
+EPOCH = 150
 #input dimension
 INPUT = NUM_OF_QUESTIONS * 2
 # embedding dimension
