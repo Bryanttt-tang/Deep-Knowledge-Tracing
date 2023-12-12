@@ -1278,3 +1278,130 @@ wandb.sdk.lib.retry.TransientError: None
 2023-12-11 21:28:00,779 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
 2023-12-11 21:28:00,856 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
 2023-12-11 21:28:02,781 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:04,783 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:06,168 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:06,784 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:10,788 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:11,189 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:12,663 DEBUG   SenderThread:102495 [sender.py:send():380] send: stats
+2023-12-11 21:28:12,789 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:14,791 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:15,708 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:28:15,708 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:28:15,725 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:28:16,793 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:16,961 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:18,795 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:22,471 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:22,798 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:24,799 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:26,801 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:28,470 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:28,803 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:30,710 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:28:30,710 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:28:30,725 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:28:30,804 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:32,807 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:34,191 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:36,810 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:38,812 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:39,413 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:40,813 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:42,664 DEBUG   SenderThread:102495 [sender.py:send():380] send: stats
+2023-12-11 21:28:42,814 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:44,817 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:45,237 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:45,709 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:28:45,709 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:28:45,725 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:28:48,820 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:50,821 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:50,953 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:52,823 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:54,825 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:28:56,174 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:28:56,826 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:00,708 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:29:00,709 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:29:00,725 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:29:00,832 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:01,949 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:02,834 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:04,836 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:06,837 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:07,659 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:08,839 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:10,840 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:12,667 DEBUG   SenderThread:102495 [sender.py:send():380] send: stats
+2023-12-11 21:29:12,671 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:12,842 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:15,708 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:29:15,709 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:29:15,725 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:29:16,845 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:18,280 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:18,847 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:20,849 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:22,851 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:23,910 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:24,852 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:26,854 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:29,818 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:30,711 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:29:30,711 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:29:30,726 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:29:30,857 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:32,858 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:34,859 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:35,523 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:36,861 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:38,863 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:40,552 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:40,864 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:42,668 DEBUG   SenderThread:102495 [sender.py:send():380] send: stats
+2023-12-11 21:29:44,867 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:45,709 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:29:45,709 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:29:45,728 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:29:45,951 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:46,869 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:48,871 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:51,099 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:52,875 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:54,877 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:56,879 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:29:56,988 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:29:58,880 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:00,709 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:30:00,709 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:30:00,726 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:30:02,884 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:02,912 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:30:04,886 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:06,888 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:08,453 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:30:08,889 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:12,671 DEBUG   SenderThread:102495 [sender.py:send():380] send: stats
+2023-12-11 21:30:12,807 ERROR   FileStreamThread:102495 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/bryant-tang-ethz/DKT-trial%201/6s8zzvbe/file_stream
+NoneType: None
+2023-12-11 21:30:12,893 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:12,945 ERROR   FileStreamThread:102495 [file_stream.py:_handle_response():504] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/bryant-tang-ethz/DKT-trial%201/6s8zzvbe/file_stream
+NoneType: None
+2023-12-11 21:30:13,480 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:30:14,895 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:15,709 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:30:15,710 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:30:15,730 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages
+2023-12-11 21:30:16,897 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:18,563 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:30:18,899 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:22,902 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:24,479 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:30:24,912 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:26,914 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:28,915 INFO    Thread-12 :102495 [dir_watcher.py:_on_file_modified():288] file/dir modified: /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231211_210611-6s8zzvbe/files/output.log
+2023-12-11 21:30:30,447 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: status_report
+2023-12-11 21:30:30,710 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: stop_status
+2023-12-11 21:30:30,710 DEBUG   SenderThread:102495 [sender.py:send_request():407] send_request: stop_status
+2023-12-11 21:30:30,726 DEBUG   HandlerThread:102495 [handler.py:handle_request():146] handle_request: internal_messages

@@ -16,9 +16,9 @@ import torch.optim as optim
 from evaluation import eval
 import wandb
 # control randomness
-random_seed = 42
-random.seed(random_seed)
-np.random.seed(random_seed)
+random_seed = 6
+# random.seed(random_seed)
+# np.random.seed(random_seed)
 torch.manual_seed(random_seed)
 
 
@@ -35,14 +35,14 @@ torch.backends.cudnn.benchmark = False
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="ASS17_baseline",
+    name="static2011_dkt",
 
 )
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
-# model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
-model = LGR(C.INPUT, C.HIDDEN, C.OUTPUT).to(device)
+model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
+# model = LGR(C.INPUT, C.HIDDEN, C.OUTPUT).to(device)
 
 optimizer_adam = optim.Adam(model.parameters(), lr=C.LR)
 optimizer_adgd = optim.Adagrad(model.parameters(),lr=C.LR)

@@ -5,9 +5,9 @@
 #SBATCH --mem-per-cpu=40G
 #SBATCH --tmp=4000                        # per node!!
 #SBATCH --gpus=rtx_3090:1
-#SBATCH --job-name=ASS17_baseline
-#SBATCH --output=./ASS17_baseline.out
-#SBATCH --error=./ASS17_baseline.err
+#SBATCH --job-name=static2011_dkt
+#SBATCH --output=./static2011_dkt.out
+#SBATCH --error=./static2011_dkt.err
 
 # run experiment
 python ./run.py

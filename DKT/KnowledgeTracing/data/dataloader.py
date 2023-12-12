@@ -37,9 +37,9 @@ def getLoader(dataset):
         testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/assist2015/assist2015_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'static2011':
-        trainLoader = getTrainLoader(C.Dpath + '/statics2011/statics2011_train.txt')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/statics2011/statics2011_train.txt')
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader(C.Dpath + '/statics2011/statics2011_test.txt')
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/statics2011/statics2011_test.txt')
         testLoaders.append(testLoader)
     elif dataset == 'kddcup2010':
         trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/kddcup2010/kddcup2010_train.txt')

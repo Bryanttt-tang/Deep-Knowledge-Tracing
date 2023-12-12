@@ -38,8 +38,8 @@ numbers = {
     'synthetic' : 50
 }
 
-DATASET = datasets['assist2017']
-NUM_OF_QUESTIONS = numbers['assist2017']
+DATASET = datasets['static2011']
+NUM_OF_QUESTIONS = numbers['static2011']
 MAX_STEP = 50 # the sequence length of RNN model
 BATCH_SIZE = 64
 LR = 0.002
