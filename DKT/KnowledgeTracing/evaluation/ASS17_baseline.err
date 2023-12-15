@@ -461,3 +461,4 @@ wandb: 🚀 View run at https://wandb.ai/bryant-tang-ethz/DKT-trial%201/runs/i1r
 wandb: Waiting for W&B process to finish... (success).
 wandb: Network error (TransientError), entering retry loop.
 wandb: Network error (TransientError), entering retry loop.
+slurmstepd: error: *** JOB 39646195 ON eu-g4-003 CANCELLED AT 2023-12-15T17:08:33 DUE TO TIME LIMIT ***

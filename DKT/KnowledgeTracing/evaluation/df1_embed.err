@@ -1,0 +1,19 @@
+wandb: Currently logged in as: bryanttang-ethz (bryant-tang-ethz). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.15.12
+wandb: Run data is saved locally in /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231215_172709-9eekgqhp
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run df1_embed
+wandb: ⭐️ View project at https://wandb.ai/bryant-tang-ethz/DKT-trial%201
+wandb: 🚀 View run at https://wandb.ai/bryant-tang-ethz/DKT-trial%201/runs/9eekgqhp
+Traceback (most recent call last):
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/./run.py", line 44, in <module>
+    model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT, C.EMBED).to(device)
+  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/model/RNNModel.py", line 18, in __init__
+    self.pre= nn.Linear(self.input_dim, self.embed_dim)
+  File "/cluster/home/yutang/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'DKT' object has no attribute 'input_dim'
+wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+wandb: Network error (TransientError), entering retry loop.
+wandb: Network error (TransientError), entering retry loop.
+wandb: Network error (TransientError), entering retry loop.

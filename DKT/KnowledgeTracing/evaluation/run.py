@@ -35,13 +35,13 @@ torch.backends.cudnn.benchmark = False
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="static2011_dkt",
+    name="df1_embed",
 
 )
 
 print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
-model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT).to(device)
+model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT, C.EMBED).to(device)
 # model = LGR(C.INPUT, C.HIDDEN, C.OUTPUT).to(device)
 
 optimizer_adam = optim.Adam(model.parameters(), lr=C.LR)
@@ -50,7 +50,7 @@ optimizer_adgd = optim.Adagrad(model.parameters(),lr=C.LR)
 loss_func = eval.lossFunc()
 
 trainLoaders, testLoaders = getLoader(C.DATASET)
-
+# learned embedding for each resource
 best_auc=0
 for epoch in range(C.EPOCH):
     print('epoch: ' + str(epoch))
