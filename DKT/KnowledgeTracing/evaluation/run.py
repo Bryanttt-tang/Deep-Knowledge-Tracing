@@ -35,7 +35,7 @@ torch.backends.cudnn.benchmark = False
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_embed",
+    name="df1_embed2",
 
 )
 
