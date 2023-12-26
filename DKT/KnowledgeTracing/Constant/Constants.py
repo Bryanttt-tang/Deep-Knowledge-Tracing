@@ -40,7 +40,7 @@ numbers = {
 
 DATASET = datasets['LON_course_comb_df1']
 NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
-MAX_STEP = 50 # the sequence length of RNN model
+MAX_STEP = 5 # the sequence length of RNN model
 BATCH_SIZE = 64
 LR = 0.002
 EPOCH = 250
@@ -53,6 +53,6 @@ EMBED = NUM_OF_QUESTIONS
 # hidden layer dimension
 HIDDEN = 200
 # nums of hidden layers
-LAYERS =2
+LAYERS =1
 # output dimension
 OUTPUT = NUM_OF_QUESTIONS

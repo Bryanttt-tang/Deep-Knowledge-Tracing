@@ -35,7 +35,7 @@ torch.backends.cudnn.benchmark = False
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_embed2",
+    name="df1_embed_5step",
 
 )
 
@@ -74,4 +74,4 @@ for epoch in range(C.EPOCH):
 #     # wandb.log({"val_f1": val_f1}, step=epoch)
 #     # wandb.log({"val_recall": val_recall}, step=epoch)
 #     # wandb.log({"val_precision": val_precision}, step=epoch)
-# wandb.finish()
+wandb.finish()

@@ -14,7 +14,7 @@ class DKT(nn.Module):
         self.layer_dim = layer_dim
         self.output_dim = output_dim
         # self.rnn = nn.LSTM(input_dim, hidden_dim, layer_dim, batch_first=True)
-        self.rnn = nn.RNN(round(embed_dim/2), hidden_dim, layer_dim, batch_first=True,nonlinearity='tanh')
+        self.rnn = nn.RNN(embed_dim, hidden_dim, layer_dim, batch_first=True,nonlinearity='tanh')
         self.fc = nn.Linear(self.hidden_dim, self.output_dim)
         self.pre= nn.Linear(self.input_dim, self.embed_dim)
         self.pre2= nn.Linear(self.embed_dim, round(self.embed_dim/2))
@@ -28,9 +28,9 @@ class DKT(nn.Module):
         # out,(hn, cn) = self.rnn(x, (h0, c0))
         # Add a pre-embedding for one-hod encoding
         embed1=self.pre(x)
-        embed2=self.pre2(self.relu(embed1))
+        # embed2=self.pre2(self.relu(embed1))
         
         h0 = Variable(torch.zeros(self.layer_dim, x.size(0), self.hidden_dim)).to(x.device)
-        out,hn = self.rnn(embed2, h0)        
+        out,hn = self.rnn(embed1, h0)        
         res = self.sig(self.fc(out))
         return res

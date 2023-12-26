@@ -200,3 +200,4 @@ Traceback (most recent call last):
     self._old_write(data)
 OSError: [Errno 122] Disk quota exceeded
 wandb: Waiting for W&B process to finish... (failed 1). Press Control-C to abort syncing.
+slurmstepd: error: *** JOB 40479723 ON eu-g4-001 CANCELLED AT 2023-12-18T00:46:52 ***
