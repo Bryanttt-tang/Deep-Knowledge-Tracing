@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/./run.py", line 44, in <module>
-    model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT, C.EMBED).to(device)
-  File "/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/model/RNNModel.py", line 18, in __init__
-    self.pre= nn.Linear(self.input_dim, self.embed_dim)
-  File "/cluster/home/yutang/miniconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1614, in __getattr__
-    raise AttributeError("'{}' object has no attribute '{}'".format(
-AttributeError: 'DKT' object has no attribute 'input_dim'
-Dataset: LON_course_comb_df1, Learning Rate: 0.002

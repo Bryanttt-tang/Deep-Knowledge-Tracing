@@ -1,0 +1,11 @@
+wandb: Currently logged in as: bryanttang-ethz (bryant-tang-ethz). Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.16.1
+wandb: Run data is saved locally in /cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KnowledgeTracing/evaluation/wandb/run-20231229_215952-r45hitom
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run df1_embed_200step
+wandb: ⭐️ View project at https://wandb.ai/bryant-tang-ethz/DKT-trial%201
+wandb: 🚀 View run at https://wandb.ai/bryant-tang-ethz/DKT-trial%201/runs/r45hitom
+wandb: Network error (TransientError), entering retry loop.
+loading train data:    : 0it [00:00, ?it/s]loading train data:    : 824it [00:02, 411.60it/s]loading train data:    : 1648it [00:06, 227.40it/s]loading train data:    : 1666it [00:06, 240.95it/s]
+loading test data:    : 0it [00:00, ?it/s]loading test data:    : 412it [00:00, 599.01it/s]
+Training:    :   0%|          | 0/102 [00:00<?, ?it/s]Training:    :   1%|          | 1/102 [00:12<20:18, 12.06s/it]

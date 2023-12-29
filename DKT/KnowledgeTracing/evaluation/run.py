@@ -35,7 +35,7 @@ torch.backends.cudnn.benchmark = False
 # Initialize Weights and Biases with your API key and project name
 wandb.init(
     project="DKT-trial 1",
-    name="df1_embed_5step",
+    name="df1_embed_200step",
 
 )
 
@@ -57,7 +57,7 @@ for epoch in range(C.EPOCH):
     model, optimizer, train_loss = eval.train(trainLoaders, model, optimizer_adgd, loss_func,device)
     # model = model.half()
     # torch.save(model, f"epoch_{epoch}.pt")
-    train_auc, train_f1, train_recall, train_precision,val_loss=eval.test(trainLoaders, model,loss_func, device)
+    train_auc, train_f1, train_recall, train_precision,train_loss=eval.test(trainLoaders, model,loss_func, device)
     val_auc, val_f1, val_recall, val_precision,val_loss=eval.test(testLoaders, model,loss_func, device)
     # if val_auc>best_auc:
     #     best_auc=val_auc

@@ -1,0 +1,8 @@
+
+Dataset: LON_course_comb_df1, Learning Rate: 0.002
+
+loading train data:    : 1666it [00:06, 240.95it/s]
+loading test data:    : 412it [00:00, 599.01it/s]
+Training:    :   0%|          | 0/102 [00:00<?, ?it/s]
+
+
