@@ -5,9 +5,9 @@
 #SBATCH --mem-per-cpu=80G
 #SBATCH --tmp=4000                        # per node!!
 #SBATCH --gpus=v100:1
-#SBATCH --job-name=df1_embed_200
-#SBATCH --output=./df1_embed_200.out
-#SBATCH --error=./df1_embed_200.err
+#SBATCH --job-name=df1_embed_100_lstm
+#SBATCH --output=./df1_embed_100_lstm.out
+#SBATCH --error=./df1_embed_100_lstm.err
 
 # run experiment
 python ./run.py
