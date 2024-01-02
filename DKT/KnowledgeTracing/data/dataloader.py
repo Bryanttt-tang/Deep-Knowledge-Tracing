@@ -12,14 +12,14 @@ from data.DKTDataSet import DKTDataSet
 def getTrainLoader(train_data_path):
     handle = DataReader(train_data_path ,C.MAX_STEP, C.NUM_OF_QUESTIONS)
     trainques, trainans = handle.getTrainData() # size: trainqus.reshape([-1, self.maxstep])
-    dtrain = DKTDataSet(trainques, trainans) # here, dtrain is the data after one-hot encoding
+    dtrain = DKTDataSet(trainques, trainans,dict_c4) # here, dtrain is the data after one-hot encoding
     trainLoader = Data.DataLoader(dtrain, batch_size=C.BATCH_SIZE, shuffle=True)
     return trainLoader
 
 def getTestLoader(test_data_path):
     handle = DataReader(test_data_path, C.MAX_STEP, C.NUM_OF_QUESTIONS)
     testques, testans = handle.getTestData()
-    dtest = DKTDataSet(testques, testans)
+    dtest = DKTDataSet(testques, testans,dict_c4)
     testLoader = Data.DataLoader(dtest, batch_size=C.BATCH_SIZE, shuffle=False)
     return testLoader
 
