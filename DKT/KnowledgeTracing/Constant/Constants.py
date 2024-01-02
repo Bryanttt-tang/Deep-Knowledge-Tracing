@@ -40,12 +40,12 @@ numbers = {
 
 DATASET = datasets['LON_course_comb_df1']
 NUM_OF_QUESTIONS = numbers['LON_course_comb_df1']
-MAX_STEP = 100 # the sequence length of RNN model
+MAX_STEP = 200 # the sequence length of RNN model
 BATCH_SIZE = 64
 LR = 0.002
 EPOCH = 250
 #input dimension
-INPUT = NUM_OF_QUESTIONS * 2
+INPUT = NUM_OF_QUESTIONS * 2+1
 # pre_embedding
 pre_dim=50
 # embedding dimension
