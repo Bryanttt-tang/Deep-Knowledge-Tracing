@@ -33,16 +33,16 @@ else:
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 # Initialize Weights and Biases with your API key and project name
-wandb.init(
-    project="DKT-trial 1",
-    name="df1_embed_2lay_200",
+# wandb.init(
+#     project="DKT-trial 1",
+#     name="df1_embed_2lay_200",
 
-)
+# )
 
-print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
+# print('Dataset: ' + C.DATASET + ', Learning Rate: ' + str(C.LR) + '\n')
 
-model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT, C.EMBED).to(device)
-# model = LGR(C.INPUT, C.HIDDEN, C.OUTPUT).to(device)
+# model = DKT(C.INPUT, C.HIDDEN, C.LAYERS, C.OUTPUT, C.EMBED).to(device)
+model = LGR(C.INPUT, C.HIDDEN, C.OUTPUT).to(device)
 
 optimizer_adam = optim.Adam(model.parameters(), lr=C.LR)
 optimizer_adgd = optim.Adagrad(model.parameters(),lr=C.LR)
@@ -62,16 +62,16 @@ for epoch in range(C.EPOCH):
     # if val_auc>best_auc:
     #     best_auc=val_auc
     #     torch.save(model.state_dict(), 'df1_deep.pth')
-    wandb.log({"train_loss": train_loss}, step = epoch)
-    wandb.log({"val_loss": val_loss}, step=epoch)
-    wandb.log({"train_auc": train_auc}, step = epoch)
-    wandb.log({"val_auc": val_auc}, step = epoch)
+#     wandb.log({"train_loss": train_loss}, step = epoch)
+#     wandb.log({"val_loss": val_loss}, step=epoch)
+#     wandb.log({"train_auc": train_auc}, step = epoch)
+#     wandb.log({"val_auc": val_auc}, step = epoch)
     
-#     # wandb.log({"train_f1": train_f1}, step=epoch)
-#     # wandb.log({"train_recall": train_recall}, step=epoch)
-#     # wandb.log({"train_precision": train_precision}, step=epoch)
+# #     # wandb.log({"train_f1": train_f1}, step=epoch)
+# #     # wandb.log({"train_recall": train_recall}, step=epoch)
+# #     # wandb.log({"train_precision": train_precision}, step=epoch)
     
-#     # wandb.log({"val_f1": val_f1}, step=epoch)
-#     # wandb.log({"val_recall": val_recall}, step=epoch)
-#     # wandb.log({"val_precision": val_precision}, step=epoch)
-wandb.finish()
+# #     # wandb.log({"val_f1": val_f1}, step=epoch)
+# #     # wandb.log({"val_recall": val_recall}, step=epoch)
+# #     # wandb.log({"val_precision": val_precision}, step=epoch)
+# wandb.finish()

@@ -1,4 +1,5 @@
 import os
+import numpy as np
 import sys
 # GRANDFA = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 # sys.path.append(GRANDFA) 
@@ -9,17 +10,17 @@ from Constant import Constants as C
 from data.readdata import DataReader
 from data.DKTDataSet import DKTDataSet
 
-def getTrainLoader(train_data_path):
+def getTrainLoader(train_data_path,dict_c4):
     handle = DataReader(train_data_path ,C.MAX_STEP, C.NUM_OF_QUESTIONS)
     trainques, trainans = handle.getTrainData() # size: trainqus.reshape([-1, self.maxstep])
     dtrain = DKTDataSet(trainques, trainans,dict_c4) # here, dtrain is the data after one-hot encoding
     trainLoader = Data.DataLoader(dtrain, batch_size=C.BATCH_SIZE, shuffle=True)
     return trainLoader
 
-def getTestLoader(test_data_path):
+def getTestLoader(test_data_path,dict_c4_test):
     handle = DataReader(test_data_path, C.MAX_STEP, C.NUM_OF_QUESTIONS)
     testques, testans = handle.getTestData()
-    dtest = DKTDataSet(testques, testans,dict_c4)
+    dtest = DKTDataSet(testques, testans,dict_c4_test)
     testLoader = Data.DataLoader(dtest, batch_size=C.BATCH_SIZE, shuffle=False)
     return testLoader
 
@@ -57,10 +58,13 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/LON_course/course0.csv')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course4':
-        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_train.csv')
+        cor_rate_train= np.load('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/cor_rate_c4.npy')
+        cor_rate_test= np.load('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/cor_rate_c4_test.npy')
+        trainLoader = getTrainLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_train.csv',cor_rate_train)
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_test.csv')
+        testLoader = getTestLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_test.csv',cor_rate_test)
         testLoaders.append(testLoader)
+        
     elif dataset == 'LON_course27':
         trainLoader = getTrainLoader(C.Dpath + '/LON_course/course27.csv')
         trainLoaders.append(trainLoader)

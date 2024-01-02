@@ -32,11 +32,11 @@ class lossFunc(nn.Module):
     def forward(self, pred, batch):
         loss = torch.Tensor([0.0]).to(batch.device)
         for student in range(pred.shape[0]):
-            delta = batch[student][:,0:C.NUM_OF_QUESTIONS] + batch[student][:,C.NUM_OF_QUESTIONS:]
+            delta = batch[student][:,0:C.NUM_OF_QUESTIONS] + batch[student][:,C.NUM_OF_QUESTIONS:-1]
             temp = pred[student][:C.MAX_STEP - 1].mm(delta[1:].t())
             index = torch.LongTensor([[i for i in range(C.MAX_STEP - 1)]]).to(temp.device)
             p = temp.gather(0, index)[0]
-            a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+            a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:-1]).sum(1) + 1)//2)[1:]
             for i in range(len(p)):
                 if p[i] > 0: # mask all 0 padding data for evaluation
                     # breakpoint()

@@ -20,7 +20,7 @@ class DKTDataSet(Dataset):
         return torch.FloatTensor(onehot.tolist())
 
     def onehot(self, questions, answers):
-        result = np.zeros(shape=[C.MAX_STEP, 2 * C.NUM_OF_QUESTIONS+1])
+        result = np.zeros(shape=[C.MAX_STEP, 2 * C.NUM_OF_QUESTIONS + 1])
         for i in range(C.MAX_STEP):
             if answers[i] > 0:
                 result[i][questions[i]] = 1
