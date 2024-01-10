@@ -78,11 +78,11 @@ def test_epoch(model, testLoader, loss_func, device):
         for student in range(pred.shape[0]):
             temp_pred = torch.Tensor([]).to(device)
             temp_gold = torch.Tensor([]).to(device)
-            delta = batch[student][:,0:C.NUM_OF_QUESTIONS] + batch[student][:,C.NUM_OF_QUESTIONS:]
+            delta = batch[student][:,0:C.NUM_OF_QUESTIONS] + batch[student][:,C.NUM_OF_QUESTIONS:-1] # with one more feature added
             temp = pred[student][:C.MAX_STEP - 1].mm(delta[1:].t()) # mask 0 padding
             index = torch.LongTensor([[i for i in range(C.MAX_STEP - 1)]]).to(temp.device)
             p = temp.gather(0, index)[0]
-            a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:]).sum(1) + 1)//2)[1:]
+            a = (((batch[student][:, 0:C.NUM_OF_QUESTIONS] - batch[student][:, C.NUM_OF_QUESTIONS:-1]).sum(1) + 1)//2)[1:]
             for i in range(len(p)):
                 if p[i] > 0:
                     temp_pred = torch.cat([temp_pred,p[i:i+1]])

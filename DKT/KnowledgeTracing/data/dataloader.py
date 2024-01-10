@@ -20,7 +20,7 @@ def getTrainLoader(train_data_path,dict_c4):
 def getTestLoader(test_data_path,dict_c4_test):
     handle = DataReader(test_data_path, C.MAX_STEP, C.NUM_OF_QUESTIONS)
     testques, testans = handle.getTestData()
-    dtest = DKTDataSet(testques, testans,dict_c4_test)
+    dtest = DKTDataSet(testques, testans, dict_c4_test)
     testLoader = Data.DataLoader(dtest, batch_size=C.BATCH_SIZE, shuffle=False)
     return testLoader
 
@@ -58,13 +58,12 @@ def getLoader(dataset):
         testLoader = getTestLoader(C.Dpath + '/LON_course/course0.csv')
         testLoaders.append(testLoader)
     elif dataset == 'LON_course4':
-        cor_rate_train= np.load('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/cor_rate_c4.npy')
-        cor_rate_test= np.load('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/cor_rate_c4_test.npy')
-        trainLoader = getTrainLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_train.csv',cor_rate_train)
+        cor_rate_train= np.load('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/cor_rate_c4.npy')
+        cor_rate_test= np.load('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/cor_rate_c4_test.npy')
+        trainLoader = getTrainLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_train.csv',cor_rate_train)
         trainLoaders.append(trainLoader)
-        testLoader = getTestLoader('D:/ETHz/Internship/adaptive-e-learning-for-educational-recommendation-system/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_test.csv',cor_rate_test)
+        testLoader = getTestLoader('/cluster/home/yutang/Deep-Knowledge-Tracing/DKT/KTDataset/LON_course/course4_test.csv',cor_rate_test)
         testLoaders.append(testLoader)
-        
     elif dataset == 'LON_course27':
         trainLoader = getTrainLoader(C.Dpath + '/LON_course/course27.csv')
         trainLoaders.append(trainLoader)

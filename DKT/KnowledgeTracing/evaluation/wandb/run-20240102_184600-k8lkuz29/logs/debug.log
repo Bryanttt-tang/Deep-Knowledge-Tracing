@@ -24,3 +24,7 @@ config: {}
 2024-01-02 18:46:20,308 INFO    MainThread:13065 [wandb_run.py:_redirect():2153] Wrapping output streams.
 2024-01-02 18:46:20,308 INFO    MainThread:13065 [wandb_run.py:_redirect():2178] Redirects installed.
 2024-01-02 18:46:20,309 INFO    MainThread:13065 [wandb_init.py:init():841] run started, returning control to user process
+2024-01-07 07:21:35,347 INFO    MainThread:13065 [wandb_run.py:_finish():1962] finishing run bryant-tang-ethz/DKT-trial 1/k8lkuz29
+2024-01-07 07:21:35,352 INFO    MainThread:13065 [wandb_run.py:_atexit_cleanup():2202] got exitcode: 0
+2024-01-07 07:21:35,365 INFO    MainThread:13065 [wandb_run.py:_restore():2185] restore
+2024-01-07 07:21:35,366 INFO    MainThread:13065 [wandb_run.py:_restore():2191] restore done
